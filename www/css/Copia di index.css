@@ -41,7 +41,7 @@ body {
     height:100%;
     margin:0px;
     padding:0px;
-   
+    text-transform:uppercase;
     width:100%;
 }
 
@@ -69,7 +69,7 @@ body {
     }
 }
 
-h11 {
+h1 {
     font-size:24px;
     font-weight:normal;
     margin:0px;
@@ -80,22 +80,15 @@ h11 {
 
 /*Oriani*/
 h1
-{font-family: courier,sans-serif; font-size: 30px; line-height:24px; 
-text-align:left;
+{font-family: arial; font-size: 15; font-color: white;
+background-color: #ff00ff;
+	
 }
 
-h2 
-{height: 45px;
-font: bold 150% calibri, sans-serif; 
-color: white;
-background-color: #94271f;	
-a link color:white; a visited color:white; text-decoration:none;
-}
-a:link, a:visited{color:black; text-decoration:none}
-
-h3
-{font: bold 120% calibri,sans serif; text-align: left;
-
+h2
+{font-family: arial; font-size: 15; font-color: white;
+background-color: #ffd700;
+	
 }
 
 .event {

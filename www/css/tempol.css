@@ -41,7 +41,7 @@ body {
     height:100%;
     margin:0px;
     padding:0px;
-   
+  
     width:100%;
 }
 
@@ -79,25 +79,27 @@ h11 {
 }
 
 /*Oriani*/
-h1
-{font-family: courier,sans-serif; font-size: 30px; line-height:24px; 
-text-align:left;
-}
-
 h2 
 {height: 45px;
 font: bold 150% calibri, sans-serif; 
 color: white;
-background-color: #94271f;	
+background-color: #b26c01;	
 a link color:white; a visited color:white; text-decoration:none;
 }
 a:link, a:visited{color:black; text-decoration:none}
 
+h1
+{font-family: courier,sans-serif; font-size: 30px; line-height:24px; 
+text-align:left;
+	
+}
+
+
+	
 h3
 {font: bold 120% calibri,sans serif; text-align: left;
 
 }
-
 .event {
     border-radius:4px;
     -webkit-border-radius:4px;

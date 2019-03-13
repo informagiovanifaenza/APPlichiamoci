@@ -79,11 +79,6 @@ h11 {
 }
 
 /*Oriani*/
-h1
-{font-family: courier,sans-serif; font-size: 30px; line-height:24px; 
-text-align:left;
-}
-
 h2 
 {height: 45px;
 font: bold 150% calibri, sans-serif; 
@@ -93,6 +88,14 @@ a link color:white; a visited color:white; text-decoration:none;
 }
 a:link, a:visited{color:black; text-decoration:none}
 
+h1
+{font-family: courier,sans-serif; font-size: 30px; line-height:24px; 
+text-align:left;
+	
+}
+
+
+	
 h3
 {font: bold 120% calibri,sans serif; text-align: left;
 
