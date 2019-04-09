@@ -32,41 +32,31 @@ body {
         linear,
         left top,
         left bottom,
-        color-stop(0, #A7A7A7),
-        color-stop(0.51, #E4E4E4)
-    );
+        color-stop(0.51, #A7A7A7),
+        color-stop(0, #E4E4E4)
+	  );
     background-attachment:fixed;
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size:12px;
     height:100%;
     margin:0px;
     padding:0px;
-  
     width:100%;
 }
 
 /* Portrait layout (default) */
 .app {
-    background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
-    position:absolute;             /* position in the center of the screen */
-    left:50%;
-    top:50%;
-    height:50px;                   /* text area height */
-    width:225px;                   /* text area width */
+    /*background:url(../img/logo-informagiovani.png) no-repeat center top;  170px x 200px */
+    max-width:270px;                   /* text area width */
     text-align:center;
-    padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
-    margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
-                                   /* offset horizontal: half of text area width */
+    margin: 0px auto;
+	padding: 0px;
 }
 
-/* Landscape layout (with min-width) */
-@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
-    .app {
-        background-position:left center;
-        padding:75px 0px 75px 170px;  /* padding-top + padding-bottom + text area = image height */
-        margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
-                                      /* offset horizontal: half of image width and text area width */
-    }
+.page {
+	width: 270px;
+	overflow: hidden;
+	margin: 0px 10px;
 }
 
 h11 {
@@ -79,27 +69,75 @@ h11 {
 }
 
 /*Oriani*/
-h2 
-{height: 45px;
-font: bold 150% calibri, sans-serif; 
-color: white;
-background-color: #b26c01;	
-a link color:white; a visited color:white; text-decoration:none;
-}
-a:link, a:visited{color:black; text-decoration:none}
 
-h1
-{font-family: courier,sans-serif; font-size: 30px; line-height:24px; 
-text-align:left;
-	
+h1 {
+	font-family: courier,sans-serif; 
+	font-size: 30px; 
+	line-height:24px; 
+	text-align:left;	
 }
 
-
-	
-h3
-{font: bold 120% calibri,sans serif; text-align: left;
-
+h2 {
+	height: 45px;
+	font-size: 120%; 
+	color: white;
+	background-color: #b26c01;	
+	line-height: 45px;
+	text-decoration:none;
 }
+
+h3 {
+	font-size: 110%;
+	text-align: left;
+	color: #b26c01;
+}
+
+h4 {
+	height: 45px;
+	font-size: 120%;
+	color: white;
+	background-color: #2085b1;	
+	text-decoration:none;
+	padding-top: 5px;
+}
+
+a:link, a:visited{color:white; text-decoration:none}
+
+
+/*bottone home*/
+.home
+{
+position: relative;
+  width: 40%;
+  max-width: 200px;
+  top: 10px;
+}
+
+.home img {
+  width: 100%;
+  height: auto;
+  top: 10px;
+}
+
+.home .btn {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(20%, -20%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  padding: 8px 40px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  top: 10px;
+}
+
+.home .btn:hover {
+  background-color: grey;
+}
+
 .event {
     border-radius:4px;
     -webkit-border-radius:4px;
@@ -134,4 +172,71 @@ h3
 .blink {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
+}
+/*-------------------------------------------------------------------------*/
+
+/* Bottone */
+.dropbtn {
+  background-color: #b26c01;		
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 270px;
+}
+
+
+/*contenuto del menu */
+.dropdown_content_class {
+  display: none;
+  position: sticky;    
+  padding: 16px;
+  margin-bottom: 10px;
+  width: 270px;
+  font-size: 14px;
+
+}
+
+/* hamburger e logo ____________________________________ */
+
+.hamburgher
+{
+	max-width:270px;                   
+    text-align:center;
+    margin: 0px auto;
+	padding: 0px;
+}
+
+#Cross_button{
+  display: none;
+  background: none;
+  border: none;
+}
+
+#Hamburger_button{
+  display: block;
+  background: none;
+  border: none;
+}
+
+.contenuti{
+  display: none;
+  font-size: 110%;
+  text-align: left;
+  font-weight: bold;
+}
+
+.contenuti a {
+  color: #b26c01;					
+}
+
+.logo{
+	float: right;
+	width: 85%;
+}
+
+.logo img{
+	width: 105%;
+	text-align: left;
 }

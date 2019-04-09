@@ -15,7 +15,7 @@
     specific language governing permissions and limitations
     under the License.
 -->
-<html>
+<html lang="en" dir="ltr">
     <head>
         <!--
         Customize this policy to fit your own app's needs. For more guidance, see:
@@ -26,56 +26,134 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+		
+		 <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        -->
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/tempol.css">
+        
+		<link rel="stylesheet" type="text/css" href="css/tempol.css">
         <title>TEMPO LIBERO</title>
     </head>
     <body>
         <div class="app">
-            <h1>Apache Cordova</h1>
-			
+            
 	<!--Oriani-->
-			<img src=".\img\logo-informagiovani.png"/>
 	
-			<h1>Tempo Libero</h1>
+	<!--Hamburgher-->	
+
+		<div class="hamburgher">
 			
-			<div>
-				<h2>Proloco Faenza</h2>
-				<a href="https://www.prolocofaenza.it/"><h3>Sito</h3></a> 
-				<a href="https://it-it.facebook.com/ProLocoFaenza/"><h3>Facebook</h3></a>
+			<div class="Hamburger_button_class">
+			
+				<div class="logo">
+					<div class=logo img><img src=".\img\logo-informagiovani.png"/></div>
+				</div>
+			</div>
+		
+			<button type="button" name="Hamburger_button" id="Hamburger_button" onclick="Hamburger(Cross_button, Hamburger_button, contenuti)"><img id="Hamburger_img" src="./img/menu-filled.png" alt="Hamburgher" height="28" width="28"></button>
+		
+		
+			<div class="Cross_button_class">
+			  <button type="button" name="Cross_button" id="Cross_button" onclick="Cross(Cross_button, Hamburger_button, contenuti)"><img src="./img/delete-sign.png" alt="Cross" height="28" width="28"></button>
+			</div>
+			<div class="contenuti" id="contenuti">
+			  <a href="./index.html">Home</a> <br/>
+			  <a href="./chi_siamo.html">Chi siamo</a> <br/>
+			  <a href="http://www.informagiovanifaenza.it/news/">News</a> <br/>
+			  <a href="http://www.informagiovaniravenna.it/newsletter-2/">Newsletters</a> <br/>
+			  <a href="./contatti.html">Contatti e orari</a><br/>
+			  <a href="./consulta_ragazzi.html">Consulta dei ragazzi</a>
 
-				<h2>Cinema</h2>
-				<a href="http://www.cinedream.it/cinedream/index.php"><h3>cinedream</h3></a>
-				<a href="http://www.cinemaincentro.com/Cinema-Sarti-Faenza"><h3>cinema sarti faenza</h3>
-				<a href="http://www.cinemaeuropa.it/"><h3>cinema europa</h3></a>
+			</div>
+		</div>
 
-				<h2>teatro</h2>
-				<a href="http://www.accademiaperduta.it/teatro_masini_faenza-84.html"><h3>teatro masini faenza</h3></a>
-				<a href="http://www.sangiuseppefaenza.it/teatro.html"><h3>teatro san giuseppe faenza</h3></a>
-				<a href="http://www.filodrammaticaberton.it/"><h3>teatro filodrammatica berton</h3></a>
 
-				<h2>musei</h2>
-				<a href="htpp://www.micdfaenza.org/it/"><h3>mic faenza</h3></a>
-				<a href="https://palazzomilzetti.jimdo.com/"><h3>palazzo milzetti</h3></a>
+			<div class="page">
+				<h1>Tempo Libero</h1>
+			
+			    <div>
+					<button type="button" name="button" onclick="showMenu(dropdown_content)" class="dropbtn";>Proloco</button>
+					
+						<div id="dropdown_content" class="dropdown_content_class">
+							<a href="https://www.prolocofaenza.it/"><h3>Proloco Faenza</h3></a> 
+				            <a href="http://www.rioloterme-proloco.it/"><h3>Proloco Riolo Terme</h3></a>
+				            <a href="http://proloco-casolavalsenio.blogspot.com/"><h3>Proloco Casola Valsenio</h3></a>
+				            <a href="https://www.prolocosolarolo.it/"><h3>Proloco Solarolo</h3></a>
+				            <a href="http://www.brisighella.org/category/pro-loco-di-brisighella/"><h3>Proloco Brisighella</h3></a>
+				            <a href="http://castelbologneseproloco.blogspot.com/"><h3>Proloco Castel Bolognese</h3></a>
+						</div>	
+				</div>
+			
+                <div>
+					<button type="button" name="button" onclick="showMenu(dropdown_content1)" class="dropbtn";>Cinema</button>
+						
+						<div id="dropdown_content1" class="dropdown_content_class">
+							<a href="http://www.cinedream.it/cinedream/index.php"><h3>Cinedream Faenza</h3></a>
+				            <a href="http://www.cinemaincentro.com"><h3>Cinema in centro Italia/Sarti Faenza</h3>
+			             	<a href="http://www.cinemaeuropa.it/"><h3>Cinema Europa Faenza</h3></a>
+			            	<a href="https://www.castelbolognesenews.eu/info-utili/cinema-moderno-castelbolognese/"><h3>Cinema Moderno Castel Bolognese</h3></a>
+				            <a href="https://www.mymovies.it/cinema/ravenna/rioloterme/"><h3>Cinema Mymovies Riolo Terme</h3></a>
+				            <a href="http://cinemasenio.blogspot.com/"><h3>Cinema Senio Casola Valsenio</h3></a>
+						</div>	
+				</div>
+                
+				<div>
+					<button type="button" name="button" onclick="showMenu(dropdown_content2)" class="dropbtn";>Teatri a Faenza</button>
+						
+						<div id="dropdown_content2" class="dropdown_content_class">
+							<a href="http://www.accademiaperduta.it/teatro_masini_faenza-84.html"><h3>Teatro Masini</h3></a>
+				            <a href="http://www.sangiuseppefaenza.it/teatro.html"><h3>Teatro San Giuseppe</h3></a>
+				            <a href="http://www.filodrammaticaberton.it/"><h3>Teatro Filodrammatici</h3></a>
+				            <a href="https://teatroduemondi.it/casa-del-teatro/"><h3>Teatro Due Mondi</h3></a>
+						</div>
+				</div>		
 
-				<h2>biblioteche</h2>
-				<a href="https://www.manfrediana.it/"><h3>biblioteca manfrediana Faenza</h3></a> 
-
-				<h2>eventi</h2>
-				<a href="https://faenza.virgilio.it/eventi/"><h3>eventi faenza</h3></a>
-	
-				<a href="http://www.festeesagre.it/calendario"><h2>feste e sagre</h2></a>
-
-				<h2>sport</h2>
-				<a href="http://www.comune.faenza.ra.it/Guida-ai-servizi/Servizi-per-lo-sport/Manifestazioni-ed-eventi/Festa-dello-Sport"><h3>festa dello sport faenza</h3></a>
-				<a href="http://www.comune.faenza.ra.it/Guida-ai-servizi/Servizi-per-lo-sport/Manifestazioni-ed-eventi/Settimana-Internazionale-di-Coppi-e-Bartali"><h3>Settimana Internazionale di Coppi e Bartali</h3></a> 
-				<a href="http://www.comune.faenza.ra.it/Guida-ai-servizi/Servizi-per-lo-sport/Manifestazioni-ed-eventi/100-Km-del-Passatore"><h3>100 Km del passatore</h3></a> 
-				<a href="http://www.comune.faenza.ra.it/Guida-ai-servizi/Servizi-per-lo-sport"><h3>servizi per lo sport</h3></a>  
+                <div>
+					<button type="button" name="button" onclick="showMenu(dropdown_content3)" class="dropbtn";>Musei a Faenza</button>
+						
+						<div id="dropdown_content3" class="dropdown_content_class">
+							<a href="htpp://www.micdfaenza.org/it/"><h3>Mic - Museo Internazionale delle Ceramiche</h3></a>
+							<a href="https://palazzomilzetti.jimdo.com/"><h3>Palazzo Milzetti</h3></a>
+						</div>
+				</div>	
+			
+				<div>
+					<button type="button" name="button" onclick="showMenu(dropdown_content4)" class="dropbtn";>Biblioteche</button>
+						
+						<div id="dropdown_content4" class="dropdown_content_class">
+							<a href="https://www.manfrediana.it/"><h3>Biblioteca Manfrediana Faenza</h3></a> 
+							<a href="http://www.seminariofaenza.it/orari-biblioteca-e-sala-studio/"><h3>Biblioteca Pio Laghi Faenza</h3></a>
+							<a href="http://www.comune.rioloterme.ra.it/Citta/Biblioteca"><h3>Biblioteca Riolo Terme</h3></a>
+							<a href="http://www.comune.castelbolognese.ra.it/Servizi/Cultura-Biblioteca"><h3>Biblioteca Castel Bolognese</h3></a> 
+							<a href="http://www.comune.solarolo.ra.it/La-Citta/Biblioteca"><h3>Biblioteca Solarolo</h3></a>
+							<a href="http://www.comune.brisighella.ra.it/Servizi/Cultura-e-Sport/Biblioteca-Comunale"><h3>Biblioteca Brisighella</h3></a> 
+							<a href="http://www.comune.casolavalsenio.ra.it/Citta/Biblioteca"><h3>Biblioteca Casola Valsenio</h3></a>
+						</div>
+				</div>	
+				<div>
+					<button type="button" name="button" onclick="showMenu(dropdown_content5)" class="dropbtn";>Eventi</button>
+						
+						<div id="dropdown_content5" class="dropdown_content_class">
+							<a href="https://faenza.virgilio.it/eventi/"><h3>Eventi Faenza</h3></a>
+							<a href="http://www.festeesagre.it/calendario"><h3>Feste e sagre</h3></a>
+						</div>
+				</div>	
+				<div>
+					<button type="button" name="button" onclick="showMenu(dropdown_content6)" class="dropbtn";>Sport</button>
+						
+						<div id="dropdown_content6" class="dropdown_content_class">
+							<a href="http://www.comune.faenza.ra.it/Guida-ai-servizi/Servizi-per-lo-sport/Manifestazioni-ed-eventi/Festa-dello-Sport"><h3>Festa dello sport faenza</h3></a>
+							<a href="http://www.comune.faenza.ra.it/Guida-ai-servizi/Servizi-per-lo-sport/Manifestazioni-ed-eventi/Settimana-Internazionale-di-Coppi-e-Bartali"><h3>Settimana Internazionale di Coppi e Bartali</h3></a> 
+							<a href="http://www.comune.faenza.ra.it/Guida-ai-servizi/Servizi-per-lo-sport/Manifestazioni-ed-eventi/100-Km-del-Passatore"><h3>100 Km del passatore</h3></a> 
+							<a href="http://www.comune.faenza.ra.it/Guida-ai-servizi/Servizi-per-lo-sport"><h3>Servizi per lo sport</h3></a>  
+						</div>
+				</div>
 		 
-				<h1><a href="./index.html">home</a></h1>
+				<div class="home">
+					<button class="btn"><a href="./index.html"><img src="./img/home - tempol.png"/></a></button>
+				</div>
 			</div>
 
  
@@ -84,6 +162,7 @@
                 <p class="event received">Device is Ready</p>
             </div>
         </div>
+		<script type="text/javascript" src="js/hamburgher.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
     </body>

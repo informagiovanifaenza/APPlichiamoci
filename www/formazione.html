@@ -15,7 +15,7 @@
     specific language governing permissions and limitations
     under the License.
 -->
-<html>
+<html lang="en" dir="ltr">
     <head>
         <!--
         Customize this policy to fit your own app's needs. For more guidance, see:
@@ -26,51 +26,109 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
-        <meta name="format-detection" content="telephone=no">
+		
+		<!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        -->
+
+		<meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/formazione.css">
+        
+		<link rel="stylesheet" type="text/css" href="css/formazione.css">
         <title>FORMAZIONE</title>
     </head>
+	
     <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
+         	
+	<!--Oriani-->
+	
+	<!--Hamburgher-->
+	
+	
+		<div class="hamburgher">
 			
-	<!--Oriani-->		
-			<img src=".\img\logo-informagiovani.png"/>
-  
-  
-			<h1>Formazione</h1>      
-    
+			<div class="Hamburger_button_class">
+			
+				<div class="logo">
+					<div class=logo img><img src=".\img\logo-informagiovani.png"/></div>
+				</div>
+			</div>
+		
+			<button type="button" name="Hamburger_button" id="Hamburger_button" onclick="Hamburger(Cross_button, Hamburger_button, contenuti)">
+			<img id="Hamburger_img" src="./img/menu-filled.png" alt="Hamburgher" height="28" width="28"></button>
+		
+		
+			<div class="Cross_button_class">
+			  <button type="button" name="Cross_button" id="Cross_button" onclick="Cross(Cross_button, Hamburger_button, contenuti)"><img src="./img/delete-sign.png" alt="Cross" height="28" width="28"></button>
+			</div>
+			<div class="contenuti" id="contenuti">
+			  <a href="./index.html">Home</a> <br/>
+			  <a href="./chi_siamo.html">Chi siamo</a> <br/>
+			  <a href="http://www.informagiovanifaenza.it/news/">News</a> <br/>
+			  <a href="http://www.informagiovaniravenna.it/newsletter-2/">Newsletters</a> <br/>
+			  <a href="./contatti.html">Contatti e orari</a><br/>
+			  <a href="./consulta_ragazzi.html">Consulta dei ragazzi</a>
 
-			<div>
-				<a href="http://www.informagiovaniravenna.it/formazione/formazione-corsi/"><h2>Corsi gratuiti e a pagamento</h2></a>
-				<a href="https://www.corsitsemiliaromagna.it">
-				<h2>Corsi IFTS Emilia Romagna</h2></a>
-				<h2>Corsi lingue</h2>
-					<h3>
-						<ul>
-							<a href="http://www.todayschoolofenglish.com"><li>Today school of english</a></li>
-							<a href="http://openenglishfaenza.com"><li>Open english faenza</a></h3></li>
-						</ul>
+			</div>
 
-				<a href="http://www.informagiovaniravenna.it/formazione/formazione-informatica/"><h2>Corsi informatica</h2></a>
-				<a href="http://www.informagiovaniravenna.it/formazione/formazione-universitaravenna/"><h2>Corsi universitari a Ravenna</h2></a>
-
-				<a href="http://www.isiafaenza.it"><h2>Corsi Alta Formazione Artistica e Musicale<br></h2></a>	
-
-
-				<h2>Indirizzi utili e Enti di formazione</h2>
-				<h3>
-					<ul>
-						<a href="./ravenna.html"><li>Ravenna</a></li>
-						<a href="./lugo.html"><li>Lugo</li></a>
-						<a href="./faenza.html"><li>Faenza</li></a>
-					</ul>
-				</h3>
- 
-				<h1><a href="./index.html">home</a></h1>
+		</div>
+        
+		<div class="app">   
+		
+			<div class="page">
+				<h1>Formazione</h1>      
+			
+				<div>
+					<button type="button" name="button" onclick="showMenu(dropdown_content)" class="dropbtn";>
+					<a href="http://www.informagiovaniravenna.it/formazione/formazione-corsi/">Corsi gratuiti e a pagamento</button>
+					</a>
+				</div>
+				
+				<div>
+					<button type="button" name="button" onclick="showMenu(dropdown_content)" class="dropbtn";>
+					<a href="https://www.corsitsemiliaromagna.it">Corsi IFTS Emilia Romagna</button></a>
+				</div>
+				
+				<div>
+					<button type="button" name="button" onclick="showMenu(dropdown_content1)" class="dropbtn";>Corsi lingue</button>
+					
+						<div id="dropdown_content1" class="dropdown_content_class">
+							<a href="http://www.todayschoolofenglish.com"><h3>Today School of English</h3></a>
+							<a href="http://openenglishfaenza.com"><h3>Open English Faenza</h3></a>
+							<a href="http://www.britishlugo.com/british-school-faenza/"><h3>British School Lugo-Faenza</h3></a>
+							<a href="http://www.extraclass.it/"><h3>Extraclass</h3></a>
+						</div>	
+				</div>
+				
+				<div>
+					<button type="button" name="button" onclick="showMenu(dropdown_content)" class="dropbtn";>
+					<a href="http://www.informagiovaniravenna.it/formazione/formazione-informatica/">Corsi informatica
+					</a>
+				</div>
+				
+				<div>
+					<button type="button" name="button" onclick="showMenu(dropdown_content)" class="dropbtn";>
+					<a href="http://www.informagiovaniravenna.it/formazione/formazione-universitaravenna/">Corsi universitari a Ravenna</button></a>
+				</div>
+				
+				<div>
+					<button type="button" name="button" onclick="showMenu(dropdown_content)" class="dropbtn";>
+					<a href="http://www.isiafaenza.it">Corsi Alta Formazione Artistica e Musicale</button></a>
+				</div>
+				
+				<div>
+					<button type="button" name="button" onclick="showMenu(dropdown_content2)" class="dropbtn";>Indirizzi utili e Enti di formazione</button>
+				
+					<div id="dropdown_content2" class="dropdown_content_class">
+						<a href="./formazione/ravenna.html"><h3>Ravenna</h3></a>
+						<a href="./formazione/lugo.html"><h3>Lugo</h3></a>
+						<a href="./formazione/faenza.html"><h3>Faenza</h3></a>
+					</div>
+				
+				</div>
+				<div class="home">
+					<button class="btn"><a href="./index.html"><img src="./img/home - form.png"/></a></button>
+				</div>
 			</div>
 
  
@@ -79,7 +137,9 @@
                 <p class="event received">Device is Ready</p>
             </div>
         </div>
+		<script type="text/javascript" src="js/hamburgher.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+		
     </body>
 </html>

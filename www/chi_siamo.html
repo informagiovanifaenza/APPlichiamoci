@@ -15,9 +15,8 @@
     specific language governing permissions and limitations
     under the License.
 -->
-<html lang="en" dir="ltr">
+<html>
     <head>
-
         <!--
         Customize this policy to fit your own app's needs. For more guidance, see:
             https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
@@ -27,38 +26,34 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-  
+        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"> -->
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        
-		<link rel="stylesheet" type="text/css" href="css/lavoro.css">
-        <title>Lavoro</title>
+        <link rel="stylesheet" type="text/css" href="css/chisiamo.css">
+        <title>Informagiovani Faenza</title>
     </head>
-    
-	<body>
-    <!--Oriani ITIP-->
-	
-	<!--Hamburgher-->	
+    <body>
+
+    	<!--Hamburgher-->
 
 		<div class="hamburgher">
-			
+
 			<div class="Hamburger_button_class">
-			
+
 				<div class="logo">
 					<div class=logo img><img src=".\img\logo-informagiovani.png"/></div>
 				</div>
 			</div>
-		
+
 			<button type="button" name="Hamburger_button" id="Hamburger_button" onclick="Hamburger(Cross_button, Hamburger_button, contenuti)"><img id="Hamburger_img" src="./img/menu-filled.png" alt="Hamburgher" height="28" width="28"></button>
-		
-		
+
+
 			<div class="Cross_button_class">
 			  <button type="button" name="Cross_button" id="Cross_button" onclick="Cross(Cross_button, Hamburger_button, contenuti)"><img src="./img/delete-sign.png" alt="Cross" height="28" width="28"></button>
 			</div>
 			<div class="contenuti" id="contenuti">
-			  <a href="./index.html">Home</a> <br/>
-			  <a href="./chi_siamo.html">Chi siamo</a> <br/>
+			  <br/><a href="./index.html">Home</a> <br/>
 			  <a href="http://www.informagiovanifaenza.it/news/">News</a> <br/>
 			  <a href="http://www.informagiovaniravenna.it/newsletter-2/">Newsletters</a> <br/>
 			  <a href="./contatti.html">Contatti e orari</a><br/>
@@ -66,58 +61,78 @@
 
 			</div>
 		</div>
-        
-		
-		<div class="app">
-    
-		
-			<div class="page">
-			
-			    <h1>Lavoro</h1>	
-			    <div>
-					<button type="button" name="button" onclick="showMenu(dropdown_content)" class="dropbtn";>Curriculum Vitae</button>
-					
-						<div id="dropdown_content" class="dropdown_content_class">
-							<a href="https://europass.cedefop.europa.eu/it/documents/curriculum-vitae"><h3>Scarica CV</h3></a>
-							<a href="https://europass.cedefop.europa.eu/editors/it/cv/compose"><h3>Come compilare CV</h3></a>
-							<a href="http://www.informagiovanifaenza.it/lavoro/"><h3>Dove andare per un aiuto per compilare CV</h3></a>
-						</div>	
-				</div>
-			    
-				<div>
-					<button type="button" name="button" onclick="showMenu(dropdown_content)" class="dropbtn";>
-					<a href="http://www.agenzialavoro.emr.it/ravenna">Offerte di lavoro a Faenza e dintorni</button></a>
-				</div>
-				
-				<div>
-					<button type="button" name="button" onclick="showMenu(dropdown_content)" class="dropbtn";>
-					<a href="http://www.agenzialavoro.emr.it/ravenna/servizi/per-le-persone/opportunita/corsi-di-formazione">Corsi su come entrare nel mondo del lavoro</button></a>
-				</div>
-				
-				<div>
-					<button type="button" name="button" onclick="showMenu(dropdown_content)" class="dropbtn";>
-					<a href="http://www.agenzialavoro.emr.it/ravenna/le-sedi-di-ravenna">Centri per l'Impiego <br/> Faenza - Lugo - Ravenna</button></a>
-				</div>
-				
-				<div>
-					<button type="button" name="button" onclick="showMenu(dropdown_content)" class="dropbtn";>
-					<a href="http://www.informagiovanifaenza.it/contatti-e-orari/">Come ottenere un appuntamento di lavoro</button></a>
-				</div>
-			
+
+		<!--Fine Hamburgher-->
+
+        <div class="app">
+
+			<h1>Chi siamo</h1>
+      <hr>
+
+			<div class="chi_siamo_class">
+
+				<img src=".\img\carlo.png" class="chi_siamo_img_class">
+				<h4>Carlo</h4>
+				<p>Consulente per l'informazione e l'orientamento</p>
+
 			</div>
-						
-			<div class="home">
-				<button class="btn"><a href="./index.html"><img src="./img/home - lav.png"/></a></button>
+	
+			<hr/>
+			<div class="chi_siamo_class">
+
+				<img src=".\img\giovanna.png" class="chi_siamo_img_class">
+				<h4>Giovanna</h4>
+				<p>Consulente, progettista e formatrice in ambito sociale</p>
+
 			</div>
-				
-			
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
+
+			<hr/>
+			<div class="chi_siamo_class">
+
+				<img src=".\img\elisa.png" class="chi_siamo_img_class">
+				<h4>Elisa</h4>
+				<p>Progettista europea appassionata di mobilità giovanile</p>
+        <a href="https://www.facebook.com/thid.7"> <img src="./img/facebook-filled.png"></a>
+        <a href="https://www.linkedin.com/in/elisa-emiliani-325b4737/"> <img src="./img/linkedin-filled.png"></a>
+
+			</div>
+		<hr/>	
+
+      <h1>Partner</h1>
+      <hr/>
+      <div class="tabella_partner">
+
+				<img src=".\img\LIBRA.png" class="chi_siamo_img_class">
+        <a href="http://www.cooplibra.it/cms/index.php?option=com_content&view=frontpage&Itemid=1"> <h4>Sito Web LIBRA</h4>  </a>
+
+				<p>La finalità principale che la Cooperativa
+           intende perseguire è quella dell'interesse generale
+           della comunità alla promozione umana dell’essere e
+           all'integrazione sociale dei cittadini.
+           Una vita migliore, una società migliore in cui i singoli
+           abbiano la possibilità di esprimere a pieno le proprie attitudini
+           e potenzialità, richiede azioni che permettano a ognuno, in primo luogo, di
+           immaginare il proprio futuro e quindi di realizzare le proprie
+           aspettative in relazione con gli altri.</p>
+
+		<hr/>
+				<img src=".\img\RICERCAZIONE.png" class="chi_siamo_img_class">
+        <a href="http://ricercazione.com/"> <h4>Sito Web RICERCAZIONE</h4> </a>
+
+				<p>RicercAzione è una cooperativa sociale impegnata
+           dal 1987 nel campo della ricerca e dell'intervento sociale.
+           E' in grado di realizzare, per conto di soggetti pubblici e privati,
+           analisi complesse di trend sociali (sia in ambito settoriale che territoriale)
+           e di proporre azioni in grado di facilitare processi di cambiamento
+           volti al miglioramento della qualità della vita.</p>
+			</div>
+
+
+
+
         </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
-		<script type="text/javascript" src="js/hamburgher.js"></script>
+        <script type="text/javascript" src="js/hamburgher.js"></script>
     </body>
 </html>

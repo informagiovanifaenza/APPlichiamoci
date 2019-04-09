@@ -44,3 +44,53 @@ var app = {
 };
 
 app.initialize();
+
+
+function interazione_menu()
+{
+
+	( ".cross" ).hide();	//Cross è la croce di chiusura del menù
+	( ".menu" ).hide();		//Menù è una classe dei link del menù
+	( ".hamburger" ).click(function() { //Bottone che cliccandolo mostra il menù
+		( ".menu" ).slideToggle( "fast", function() { //Funzione slide del menù
+			( ".hamburger" ).hide(); //Nasconde "l'icona" dell'hamburger
+			( ".cross" ).show();	//Mostra la croce per chiudere
+			});
+		});
+			//Simile per chiudere il menu e far riapparire l'hamburger
+	( ".cross" ).click(function() {
+		( ".menu" ).slideToggle( "fast", function() {
+			( ".cross" ).hide();
+			( ".hamburger" ).show();
+		});
+	});
+}
+
+
+
+function rindirzzamento_pagina(link) //Da associare ad un bottone entrambe le funzioni, cambiare il percorso del file
+{
+
+	location.replace("link");
+
+}
+
+function rindirzzamento_al_menu()
+{
+
+	location.replace("./index.html");
+
+}
+
+//--------------------------------------------------------------------------
+
+function showMenu(elem)
+{
+    if(elem.style.display === "none")
+    {
+      elem.style.display = "block";
+    }else
+    {
+      elem.style.display = "none";
+    }
+}

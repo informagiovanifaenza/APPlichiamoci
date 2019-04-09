@@ -58,7 +58,7 @@ body {
 .page {
 	width: 270px;
 	overflow: hidden;
-	margin: 0px 10px;
+	margin: 0px 10 px;
 }
 
 h11 {
@@ -72,35 +72,62 @@ h11 {
 
 /*Oriani*/
 h1	{
-	font-family: courier,sans-serif; font-size: 30px; line-height:24px; 
+	font-family: courier,sans-serif; 
+	font-size: 30px; 
+	line-height:24px;
 	text-align:left;
 }
 
 h2 {
-	height: 25px;
-	font-size: 10%; 
+	height: 45px;
+	font-size: 120%;
 	color: white;
-	background-color: #68830e;	
+	background-color: #e40f76;
 	text-decoration:none;
-	line-height: 25px;
+	line-height: 45px;
 	width: 270px;
 }
 
 h3	{
-	font-size: 110%;
-	text-align: left;
-	color: #68830e;
-	width: 260px;
+	font-size: 100%;
+	text-align: center;
+	color: black;
 }
 
+/* Modifiche apportate al css */
+
 h4 {
-	height: 45px;
-	font-size: 10%; 
+	height: 25px;
+	font-size: 120%;
 	color: white;
-	background-color: #68830e;	
+	background-color: #e40f76;
 	text-decoration:none;
 	padding-top: 5px;
 	width: 270px;
+   border-radius: 10px;
+   text-align: center;
+}
+
+
+
+.chi_siamo_img_class{
+  margin-top: 10px;
+  height: 80%;
+  width: 80%;
+  border-radius: 10px;
+}
+
+
+.chi_siamo_class p{
+  text-align-last: center;
+  font-size: 110%;
+  font-family: sans-serif;
+}
+
+p{
+  text-align: left;
+  font-size: 120%;
+  font-family: sans-serif;
 }
 
 a:link, a:visited{color:white; text-decoration:none}
@@ -137,31 +164,31 @@ a:link, a:visited{color:white; text-decoration:none}
 .home .btn:hover {
   background-color: grey;
   top: 10px;
- 
-}	
+
+}
 
 /*------------------------------------------------------------------------- */
 
 /* Bottone */
 .dropbtn {
-  background-color: #68830e;
+  background-color: #e40f76;
   color: white;
   padding: 16px;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
   width: 270px;
-  
+
 }
 
 
 /*contenuto del menu */
 .dropdown_content_class {
   display: none;
-  position: sticky;    
+  position: sticky;
   padding: 16px;
-  margin-bottom: 5px;
-  width: 250px;
+  margin-bottom: 30px;
+  width: 270px;
   font-size: 14px;
 
 }
@@ -171,7 +198,7 @@ a:link, a:visited{color:white; text-decoration:none}
 
 .hamburgher
 {
-	max-width:270px;                   
+	max-width:270px;
     text-align:center;
     margin: 0px auto;
 	padding: 0px;
@@ -197,7 +224,7 @@ a:link, a:visited{color:white; text-decoration:none}
 }
 
 .contenuti a {
-  color: #68830e;
+  color: #e40f76;
 }
 
 .logo{
@@ -237,14 +264,15 @@ a:link, a:visited{color:white; text-decoration:none}
     50% { opacity: 0.4; }
     to { opacity: 1.0; }
 }
- 
+
 @-webkit-keyframes fade {
     from { opacity: 1.0; }
     50% { opacity: 0.4; }
     to { opacity: 1.0; }
 }
- 
+
 .blink {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
 }
+

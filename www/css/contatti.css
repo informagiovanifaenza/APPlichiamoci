@@ -41,35 +41,27 @@ body {
     height:100%;
     margin:0px;
     padding:0px;
-    text-transform:uppercase;
+   
     width:100%;
 }
 
-/* Portrait layout (default) */
 .app {
     background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
-    position:absolute;             /* position in the center of the screen */
-    left:50%;
-    top:50%;
-    height:50px;                   /* text area height */
-    width:225px;                   /* text area width */
+    max-width:270px;                   /* text area width */
     text-align:center;
-    padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
-    margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
-                                   /* offset horizontal: half of text area width */
+    margin: 10px auto 50px;
+}
 }
 
-/* Landscape layout (with min-width) */
-@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
-    .app {
-        background-position:left center;
-        padding:75px 0px 75px 170px;  /* padding-top + padding-bottom + text area = image height */
-        margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
-                                      /* offset horizontal: half of image width and text area width */
-    }
+
+
+.page {
+	width: 270px;
+	overflow: hidden;
+	margin: 0px 10 px;
 }
 
-h1 {
+h11 {
     font-size:24px;
     font-weight:normal;
     margin:0px;
@@ -79,17 +71,148 @@ h1 {
 }
 
 /*Oriani*/
-h1
-{font-family: arial; font-size: 15; font-color: white;
-background-color: #ff00ff;
-	
+h1	{
+	font-family: courier,sans-serif; 
+	font-size: 30px; 
+	line-height:24px; 
+	text-align:left;
 }
 
-h2
-{font-family: arial; font-size: 15; font-color: white;
-background-color: #ffd700;
-	
+h2 {
+	height: 45px;
+	font-size: 120%; 
+	color: white;
+	background-color: #e40f76;	
+	text-decoration:none;
+	line-height: 45px;
+	width: 270px;
 }
+
+h3	{
+	font-size: 120%;
+	text-align: center;
+	color: #000000;
+}
+
+h4 {
+	height: 45px;
+	font-size: 120%; 
+	color: white;
+	background-color: #e40f76;	
+	text-decoration:none;
+	padding-top: 5px;
+	width: 270px;
+}
+
+a:link, a:visited{color:#e40f76; text-decoration:none}
+
+/*bottone home*/
+.home {
+  float: clear;
+  position: relative;
+  width: 40%;
+  max-width: 200px;
+}
+
+.home img {
+  width: 100%;
+  height: auto;
+  top: 10px;
+}
+
+.home .btn {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(20%, -20%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  padding: 8px 40px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  top: 10px;
+}
+
+.home .btn:hover {
+  background-color: grey;
+  top: 10px;
+ 
+}	
+
+/*------------------------------------------------------------------------- */
+
+/* Bottone */
+.dropbtn {
+  background-color: #e40f76;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 270px;
+  
+}
+
+
+/*contenuto del menu */
+.dropdown_content_class {
+  display: none;
+  position: sticky;    
+  padding: 16px;
+  margin-bottom: 30px;
+  width: 270px;
+  font-size: 14px;
+
+}
+
+
+/* hamburger e logo ____________________________________ */
+
+.hamburgher
+{
+	max-width:270px;                   
+    text-align:center;
+    margin: 0px auto;
+	padding: 0px;
+}
+
+#Cross_button{
+  display: none;
+  background: none;
+  border: none;
+}
+
+#Hamburger_button{
+  display: block;
+  background: none;
+  border: none;
+}
+
+.contenuti{
+  display: none;
+  font-size: 110%;
+  text-align: left;
+  font-weight: bold;
+}
+
+.contenuti a {
+  color: #e40f76;
+}
+
+.logo{
+	float: right;
+	width: 85%;
+}
+
+.logo img{
+	width: 105%;
+	text-align: left;
+}
+
+/* ____________________________________ */
+
 
 .event {
     border-radius:4px;

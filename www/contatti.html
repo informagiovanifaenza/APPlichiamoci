@@ -15,7 +15,7 @@
     specific language governing permissions and limitations
     under the License.
 -->
-<html>
+<html lang="en" dir="ltr">
     <head>
         <!--
         Customize this policy to fit your own app's needs. For more guidance, see:
@@ -26,19 +26,31 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
+		
         <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
         -->
 		<meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-        <title>Informagiovani Faenza</title>
+        
+		<link rel="stylesheet" type="text/css" href="css/contatti.css">
+        <title>Contatti e Orari</title>
     </head>
+	
     <body>
+	
+	<!--Oriani ITIP-->
 	
 	<!--Hamburgher-->	
 
 		<div class="hamburgher">
+			
+			<div class="Hamburger_button_class">
+			
+				<div class="logo">
+					<div class=logo img><img src=".\img\logo-informagiovani.png"/></div>
+				</div>
+			</div>
 		
 			<button type="button" name="Hamburger_button" id="Hamburger_button" onclick="Hamburger(Cross_button, Hamburger_button, contenuti)"><img id="Hamburger_img" src="./img/menu-filled.png" alt="Hamburgher" height="28" width="28"></button>
 		
@@ -47,48 +59,47 @@
 			  <button type="button" name="Cross_button" id="Cross_button" onclick="Cross(Cross_button, Hamburger_button, contenuti)"><img src="./img/delete-sign.png" alt="Cross" height="28" width="28"></button>
 			</div>
 			<div class="contenuti" id="contenuti">
-			
-			  <a href="./chi_siamo.html"><font color="#e40f76">Chi siamo</a></font> <br/>
-			  <a href="http://www.informagiovanifaenza.it/news/"><font color="#94271f">News</a></font> <br/>
-			  <a href="http://www.informagiovaniravenna.it/newsletter-2/"><font color="#2085b1">Newsletters</a> </font> <br/>
-			  <a href="./contatti.html"><font color="#b26c01">Contatti e orari</a></font> <br/>
-			  <a href="./consulta_ragazzi.html"><font color="#68830e">Consulta dei ragazzi</a></font> 
+			  <a href="./index.html">Home</a> <br/>
+			  <a href="./chi_siamo.html">Chi siamo</a> <br/>
+			  <a href="http://www.informagiovanifaenza.it/news/">News</a> <br/>
+			  <a href="http://www.informagiovaniravenna.it/newsletter-2/">Newsletters</a> <br/>
+			  <a href="./consulta_ragazzi.html">Consulta dei ragazzi</a>
+
 			</div>
 		</div>
-		
-		
-        <div class="app">
-            
-			
-	<!--Oriani-->
-			
-			<img src="./img/logo-informagiovani.png"/>
-			
-			<div class="menu-index-page">	
-				<a href="./lavoro.html"><img src="img/lavoro.png"/></a>
-				<a href="./formazione.html"><img src="img/formazione.png"/></a>
-				<a href="./istruzione.html"><img src="img/istruzione.png"/></a>
-				<a href="./tempo libero.html"><img src="img/tempo libero.png"/></a>
-				<a href="./volontariato.html"><img src="img/volontariato1.png"/></a>
-				<a href="./estero.html"><img src="img/estero.png"/></a>
-			</div>
-
         
 		
-		<div>
-			<br/><i><font size="5pt">Informagiovani Faenza</font></i><br/>
-			<br/>Via San Giovanni Bosco, 1 - 48018 Faenza<br/>
-			Tel: 0546 691878<br/>
-			<a href="mailto:informagiovani@romagnafaentina.it"><font color="blue">informagiovani@romagnafaentina.it</font></a><br/>
-			</div>
-		</div>
+		<div class="app">
+    
 		
-		
-		
-		 <!-->   <div id="deviceready" class="blink">
-					<p class="event listening">Connecting to Device</p>
-					<p class="event received">Device is Ready</p>
-				</div></-->
+			<div class="page">
+				<h1>Contatti e <br/> Orari</h1>
+				
+				<div class="entry-content">
+						<div>
+							<h3>Contatti</h3>
+							Via San Giovanni Bosco, 1 (Ex Salesiani)<br>
+							48018 Faenza<br>
+							Tel: 0546 69 18 78<br>
+							<a href="mailto:informagiovani@romagnafaentina.it"> email: informagiovani@romagnafaentina.it</a>
+						</div>
+						<div>
+							<h3>Orari</h3>
+							<div>Luned&#236 &#8211 dalle 10:00 alle 12:00</div>
+							<div>Mercoled&#236 &#8211 dalle 15:00 alle 17:00</div>
+							<div>Venerd&#236 &#8211 dalle 10:00 alle 12:00</div>
+							
+							<p>&nbsp;</p>
+						</div>
+				</div>
+
+ 
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>
+            </div>
+			
+        </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
 		<script type="text/javascript" src="js/hamburgher.js"></script>

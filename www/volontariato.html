@@ -15,7 +15,7 @@
     specific language governing permissions and limitations
     under the License.
 -->
-<html>
+<html lang="en" dir="ltr">
     <head>
         <!--
         Customize this policy to fit your own app's needs. For more guidance, see:
@@ -26,71 +26,125 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
-        <meta name="format-detection" content="telephone=no">
+		
+        <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        -->
+		<meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/volontariato.css">
+        
+		<link rel="stylesheet" type="text/css" href="css/volontariato.css">
         <title>VOLONTARIATO</title>
     </head>
+	
     <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
+	
+	<!--Oriani ITIP-->
+	
+	<!--Hamburgher-->	
+
+		<div class="hamburgher">
 			
-	<!--Oriani-->		
-			<img src=".\img\logo-informagiovani.png"/>
+			<div class="Hamburger_button_class">
 			
-			<h1> Volontariato </h1>
-	
-			<div>
-				<a href="http://www.serviziocivile.gov.it/"><h2> Servizio Civile Nazionale</h2></a>
-				<a href="http://serviziocivile.racine.ra.it/progetti.htm"><h3>COPRESC provinciale (Coordinamento Provinciale Enti Servizio Civile)</h3></a>
-				Via Di Roma, 69, 48121 Ravenna<br>
-				Orari di apertura al pubblico<br>
-				lun. e mart.: 10 -18 / giovedi&grave; : 9-13<br>
-				Referente: Lorenzo Bertoni<br>
-				tel. 0544 258616 Fax 0544 258625<br>
-	
-				<a href="http://serviziocivile.racine.ra.it/progetti.htm"><h3>Responsabile del Servizio Civile del Comune di Faenza</h3></a>
-				dott. Pierangelo Unibosi, Dirigente Servizi Sociale Unione Romagna Faentina<br>
-				pierangelo.unibosi@romagnafaentina.it<br>
-				Via degli Insorti, 2, Faenza<br>
-				<h3>Esperta amministrativa<h3>
-				Raffaella Laghi<br>
-				raffaella.laghi@romagnafaentina.it – tel. 0546 691872<br>
-				Orario: lunedì – mercoledì – venerdì dalle 9,00 alle 13,30<br>
-				martedì e giovedì dalle 9,00 alle 13,00 e dalle 14,30 alle 16,00<br>
-	
-				<h2>Campi di Lavoro</h2>
-				<a href="http://www.informagiovanifaenza.it/volontariato/campi-di-lavoro-in-italia/"><h3>Campi di lavoro in Italia </h3></a>
-				<a href="http://www.informagiovanifaenza.it/volontariato/campi-di-lavoro-allestero/"><h3>Campi di lavoro all’estero</h3> </a>
-
-				<a href=".http://www.informagiovanifaenza.it/volontariato/cooperazione-internazionale/"><h2>Cooperazione Internazionale</h2></a>
-
-				<h2>Organizzazioni con le quali si puo&grave; partire come volontario professionale</h2>
-				<a href="https://www.unv.org/"><h3>unv</h3></a>
-				<a href="https://ec.europa.eu/europeaid/index_it.htm"><h3>europaid</h3></a>
- 
-				<a href="http://www.volint.it/vis/"><h3>volint</h3></a>
-				<a href="http://www.ong.it/"><h3>ong</h3></a>
-				<a href="https://www.focsiv.it/"><h3>focsiv</h3></a>
-				<a href="http://www.cocis.it/"><h3>cocis</h3></a>
-				<a href="http://cipsi.it/"><h3>cipsi</h3></a>
+				<div class="logo">
+					<div class=logo img><img src=".\img\logo-informagiovani.png"/></div>
+				</div>
+			</div>
+		
+			<button type="button" name="Hamburger_button" id="Hamburger_button" onclick="Hamburger(Cross_button, Hamburger_button, contenuti)"><img id="Hamburger_img" src="./img/menu-filled.png" alt="Hamburgher" height="28" width="28"></button>
+		
+		
+			<div class="Cross_button_class">
+			  <button type="button" name="Cross_button" id="Cross_button" onclick="Cross(Cross_button, Hamburger_button, contenuti)"><img src="./img/delete-sign.png" alt="Cross" height="28" width="28"></button>
+			</div>
+			<div class="contenuti" id="contenuti">
+			  <a href="./index.html">Home</a> <br/>
+			  <a href="./chi_siamo.html">Chi siamo</a> <br/>
+			  <a href="http://www.informagiovanifaenza.it/news/">News</a> <br/>
+			  <a href="http://www.informagiovaniravenna.it/newsletter-2/">Newsletters</a> <br/>
+			  <a href="./contatti.html">Contatti e orari</a><br/>
+			  <a href="./consulta_ragazzi.html">Consulta dei ragazzi</a>
+			</div>
+		</div>
+        
+		
+		<div class="app">
     
-				<h2>Servizio Volontario Europeo (SVE)</h2>
-				<a href="https://www.portaledeigiovani.it/scheda/servizio-volontario-europeo-erasmus-cosa-e-come-si-partecipa"><h3>Cosa e&grave; il SVE </h3></a>
-				<a href="http://www.agenziagiovani.it/index.php"><h3>Sito della Agenzia Nazionale per i Giovani</h3></a>
-    
-				<h2>Volontariato locale</h2>
-				<h3>Vuoi fare una esperienza di volontariato in una associazione del territorio?</h3>
-				<a href="http://www.comune.faenza.ra.it/Amministrazione/Partecipazione-ed-associazionismo/Associazioni-di-Promozione-Sociale-e-di-Volontariato"><h3>Associazioni di volontariato e associazioni di promozione sociale</h3></a>
-    
-				<h2>Centro Servizi per il Volontariato</h3>
-				<a href="http://www.informagiovanifaenza.it/wp-content/uploads/2013/10/Costituire-una-non-profit.pdf"><h3>Costituire una non profit</h3></a>
-				<a href="http://www.informagiovanifaenza.it/wp-content/uploads/2013/10/Terzo-settore.pdf"><h3>Terzo settore (pubblicazione a cura di AssIProV)</h3></a>
-				<a href="http://www.informagiovanifaenza.it/wp-content/uploads/2013/10/La-gestione-di-unorganizzazione-di-volontariato.pdf"><h3>La gestione di un’organizzazione di volontariato (pubblicazione a cura di AssIProV)</h3></a>
+		
+			<div class="page">
+				<h1>Volontariato</h1>
+				
+				<div width="260px">
+					<button type="button" name="button" onclick="showMenu(dropdown_content1)" class="dropbtn";>Servizio Civile Nazionale</button>
+					
+						<div id="dropdown_content1" class="dropdown_content_class" >
+							<a href="http://serviziocivile.racine.ra.it/progetti.htm"><h3>COPRESC provinciale (Coordinamento Provinciale Enti Servizio Civile)</h3></a>
+				            Via Di Roma, 69, 48121 Ravenna<br/>
+				            Orari di apertura al pubblico<br/>
+				            lun. e mart.: 10 -18 / giovedi&grave; : 9-13
+				            <h3>Referente: Lorenzo Bertoni</h3>
+				            tel. 0544 258616 Fax 0544 258625
+							<h3>Responsabile del Servizio Civile del Comune di Faenza</h3>
+				            dott. Pierangelo Unibosi, Dirigente Servizi Sociale Unione Romagna Faentina<br/>
+				            <a href="mailto:pierangelo.unibosi@romagnafaentina.it"><font color="blue" size="2"><b>pierangelo.unibosi@romagnafaentina.it</b></font></a><br/>
+				            Via degli Insorti, 2, Faenza<br/>
+				            <h3>Esperta amministrativa</h3>
+				            Raffaella Laghi<br>
+				            <a href="mailto:raffaella.laghi@romagnafaentina.it"><font color="blue" size="2"><b>raffaella.laghi@romagnafaentina.it</b></font></a><br/>tel. 0546 691872<br/>
+				            Orario: lunedì – mercoledì – venerdì dalle 9,00 alle 13,30<br/>
+				            martedì e giovedì dalle 9,00 alle 13,00 e dalle 14,30 alle 16,00<br/>
+						</div>	
+				</div>
+				
+				<div>
+					<button type="button" name="button" onclick="showMenu(dropdown_content2)" class="dropbtn";>Campi di lavoro</button>
 
-				<h1><a href="./index.html">home</a></h1>
+				        <div id="dropdown_content2" class="dropdown_content_class">
+					        <a href="http://www.informagiovanifaenza.it/volontariato/campi-di-lavoro-in-italia/"><h3>Campi di lavoro in Italia </h3></a>
+					        <a href="http://www.informagiovanifaenza.it/volontariato/campi-di-lavoro-allestero/"><h3>Campi di lavoro all’estero</h3> </a>
+				        </div>
+				</div>	
+					
+				<div>	
+					<button type="button" name="button" onclick="showMenu(dropdown_content3)" class="dropbtn";>Organizzazioni per il volontariato</button>
+
+						<div id="dropdown_content3" class="dropdown_content_class">
+						<a href="https://www.unv.org/"><h3>UN Volunteers</h3></a>
+						<a href="https://ec.europa.eu/europeaid/node/22"><h3>EUROPAID - International Cooperation and development</h3></a>
+						<a href="http://www.volint.it/vis/"><h3>VIS - Volontariato Internazionale per lo sviluppo</h3></a>
+						<a href="http://www.ong.it/"><h3>AOI - Cooperazione e Solidarietà internazionale</h3></a>
+						<a href="https://www.focsiv.it/"><h3>FOCSIV - Federazione degli Organismi Cristiani Servizio Internazionale Volontario</h3></a>
+						<a href="http://www.cocis.it/"><h3>COCIS - Coordinamento delle Organizzazioni non governative per la Cooperazione Internazionale allo Sviluppo</h3></a>
+						<a href="http://cipsi.it/"><h3>CIPSI - Solidarietà e Cooperazione</h3></a>
+						</div>
+				</div>	
+					
+		        <div>
+		            <button type="button" name="button" onclick="showMenu(dropdown_content)" class="dropbtn";>
+						<a href="https://serviziovolontarioeuropeo.it/>SVE Servizio volontariato europeo</a></button>
+                </div>						
+				
+	            <div>
+                    <button type="button" name="button" onclick="showMenu(dropdown_content5)" class="dropbtn";>
+					<a href="http://www.comune.faenza.ra.it/Amministrazione/Partecipazione-ed-associazionismo/Associazioni-di-Promozione-Sociale-e-di-Volontariato">
+					Volontariato locale</a></button>
+	            </div>
+	            
+				<div>
+                    <button type="button" name="button" onclick="showMenu(dropdown_content)" class="dropbtn";>Centro Servizi per il Volontariato</button>
+
+                        <div id="dropdown_content" class="dropdown_content_class">
+                        <a href="http://www.informagiovanifaenza.it/wp-content/uploads/2013/10/Costituire-una-non-profit.pdf"><h3>Costituire una Non Profit</h3></a>
+	                    <a href="http://www.informagiovanifaenza.it/wp-content/uploads/2013/10/Terzo-settore.pdf"><h3>Terzo settore (a cura di AssIProV)</h3></a>
+	                    <a href="http://www.informagiovanifaenza.it/wp-content/uploads/2013/10/La-gestione-di-unorganizzazione-di-volontariato.pdf">
+						<h3>La gestione di un’organizzazione di volontariato (a cura di AssIProV)</h3></a>
+                        </div>
+				</div>		
+				
+				<div class="home">
+					<button class="btn"><a href="./index.html"><img src="./img/home - vol.png"/></a></button>
+				</div>
 			</div>
 
  
@@ -101,5 +155,6 @@
         </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/hamburgher.js"></script>
     </body>
 </html>
