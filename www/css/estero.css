@@ -35,13 +35,18 @@ body {
         color-stop(0.51, #A7A7A7),
         color-stop(0, #E4E4E4)
     );
-    background-attachment:fixed;
+    /*background-attachment:fixed;*/
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size:12px;
     height:100%;
-    margin:0px;
+    margin-top:5px;
+	margin-left:0px;
+	margin-bottom:0px;
+	margin-right:0px;
     padding:0px;
     width:100%;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 /* Portrait layout (default) */

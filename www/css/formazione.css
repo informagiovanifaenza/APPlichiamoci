@@ -35,13 +35,15 @@ body {
         color-stop(0.51, #A7A7A7),
         color-stop(0, #E4E4E4)
     );
-    background-attachment:fixed;
+    /*background-attachment:fixed;*/
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size:12px;
     height:100%;
-    margin:0px;
+    margin-top:5px;
+	margin-left:0px;
+	margin-bottom:0px;
+	margin-right:0px;
     padding:0px;
-	
     width:100%;
 }
 
@@ -80,12 +82,12 @@ h1 {
 }
 
 h2 {
-	height: 25px;
-	font-size: 110%;  
+	height: 45px;
+	font-size: 120%; 
 	color: white;
 	background-color: #ffc70a;	
-	line-height: 25px;
 	text-decoration:none;
+	line-height: 45px;
 	width: 270px;
 }
 
@@ -97,7 +99,7 @@ h3
 
 h4 {
 	height: 45px;
-	font-size: 110%; 
+	font-size: 120%; 
 	color: white;
 	background-color: #ffc70a;	
 	text-decoration:none;
@@ -110,10 +112,10 @@ a:link, a:visited{color:white; text-decoration:none}
 /*bottone home*/
 .home
 {
-position: relative;
+  float: clear;
+  position: relative;
   width: 40%;
   max-width: 200px;
-  top: 10px;
 }
 
 .home img {
@@ -196,7 +198,7 @@ position: relative;
   display: none;
   position: sticky;    
   padding: 16px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   width: 270px;
   font-size: 14px;
 

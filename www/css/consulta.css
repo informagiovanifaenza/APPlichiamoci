@@ -32,14 +32,17 @@ body {
         linear,
         left top,
         left bottom,
-        color-stop(0, #A7A7A7),
-        color-stop(0.51, #E4E4E4)
+        color-stop(0.51, #A7A7A7),
+        color-stop(0, #E4E4E4)
     );
-    background-attachment:fixed;
+    /*background-attachment:fixed;*/
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size:12px;
     height:100%;
-    margin:0px;
+    margin-top:5px;
+	margin-left:0px;
+	margin-bottom:0px;
+	margin-right:0px;
     padding:0px;
    
     width:100%;
@@ -110,66 +113,7 @@ p{
 
 a:link, a:visited{color:white; text-decoration:none}
 
-/*bottone home*/
-.home {
-  float: clear;
-  position: relative;
-  width: 40%;
-  max-width: 200px;
-}
 
-.home img {
-  width: 100%;
-  height: auto;
-  top: 10px;
-}
-
-.home .btn {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(20%, -20%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: #f1f1f1;
-  padding: 8px 40px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  text-align: center;
-  top: 10px;
-}
-
-.home .btn:hover {
-  background-color: grey;
-  top: 10px;
- 
-}	
-
-/*------------------------------------------------------------------------- */
-
-/* Bottone */
-.dropbtn {
-  background-color: #e40f76;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  width: 270px;
-  
-}
-
-
-/*contenuto del menu */
-.dropdown_content_class {
-  display: none;
-  position: sticky;    
-  padding: 16px;
-  margin-bottom: 30px;
-  width: 270px;
-  font-size: 14px;
-
-}
 
 
 /* hamburger e logo ____________________________________ */
