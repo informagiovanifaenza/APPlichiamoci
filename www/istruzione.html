@@ -15,8 +15,9 @@
     specific language governing permissions and limitations
     under the License.
 -->
-<html lang="en" dir="ltr">
+<html lang="it" dir="ltr">
     <head>
+
         <!--
         Customize this policy to fit your own app's needs. For more guidance, see:
             https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
@@ -27,121 +28,121 @@
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
         <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
-		--> 
+		-->
 
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
         <link rel="stylesheet" type="text/css" href="css/istruzione.css">
+        <link rel="stylesheet" href="./font-awesome/css/all.css"> <!-- menu !-->
+
         <title>ISTRUZIONE</title>
     </head>
     <body>
-            
-	<!--Oriani-->		
-	
-	<!--Hamburgher-->	
 
-		<div class="hamburgher">
-			
-			<div class="Hamburger_button_class">
-			
-				<div class="logo">	
-			        <div class=logo img><img src=".\img\logo-informagiovani.png"/></div>
-                </div>
-			</div>
-		
-			<button type="button" name="Hamburger_button" id="Hamburger_button" onclick="Hamburger(Cross_button, Hamburger_button, contenuti)"><img id="Hamburger_img" src="./img/menu-filled.png" alt="Hamburgher" height="28" width="28"></button>
-		
-		
-			<div class="Cross_button_class">
-			  <button type="button" name="Cross_button" id="Cross_button" onclick="Cross(Cross_button, Hamburger_button, contenuti)"><img src="./img/delete-sign.png" alt="Cross" height="28" width="28"></button>
-			</div>
-			<div class="contenuti" id="contenuti">
-			  <a href="./index.html">Home</a> <br/>
-			  <a href="./chi_siamo.html">Chi siamo</a> <br/>
-			  <a href="http://www.informagiovanifaenza.it/news/">News</a> <br/>
-			  <a href="http://www.informagiovaniravenna.it/newsletter-2/">Newsletters</a> <br/>
-			  <a href="https://www.youngercard.it/">Youngercard</a><br/>
-			  <a href="./applichiamoci.html">Applichiamoci</a><br/>
-			  <a href="./consulta_ragazzi.html">Consulta dei ragazzi</a><br/>
-			  <a href="./contatti.html">Contatti e orari</a><br/>
 
-			</div>
-		</div>
-        <div class="app">
-		
-			<div class="page">
-			
-				<h1>Istruzione</h1>
-			
-			<div>
-					<button type="button" name="button" onclick="showMenu(dropdown_content)" class="dropbtn";>Istituti di Scuola Secondaria Superiore a Faenza</button>
-					
-						<div id="dropdown_content" class="dropdown_content_class">
-				             <a href="http://www.itoriani.gov.it/joomlafap/index.php"><h3>Istituto Tecnico statale "A. Oriani"</h3> </a>
-				            <a href="https://www.itipfaenza.gov.it/pvw/app/RAII0003/pvw_sito.php"><h3>Istituto Tecnico e Professionale statale "L. Bucci"</h3> </a>
-				            <a href="http://www.liceotorricelli-ballardini.gov.it/"><h3>Liceo E. Torricelli</h3></a>
-				            <a href="http://www.persolinostrocchi.edu.it/"><h3>Istituto Professionale statale "Strocchi - Persolino"</h3> </a>
-				            <a href="http://www.coopcentrostudi.it/"><h3>Istituto Professionale paritario <br>  "U. Foscolo"</h3> </a>
-				        </div>
-			</div>
-			<div>
-					<button type="button" name="button" onclick="showMenu(dropdown_content)" class="dropbtn";>
-					<a href="https://www.tuttitalia.it/emilia-romagna/14-scuole/">Scuole in Emilia Romagna</button></a>
-			</div>
-			<div>
-					<button type="button" name="button" onclick="showMenu(dropdown_content1)" class="dropbtn";>Universita&grave; in Emilia Romagna</button>
-					
-						<div id="dropdown_content1" class="dropdown_content_class">
-						   <a href="https://www.unibo.it/it"><h3>Universita&grave; di Bologna</h3> </a>
-						   
-			                   <ul>
-					               <li><a href="https://www.unibo.it/it/campus-ravenna"><h3>Campus di Ravenna</h3></a></li>
-					               <li><a href="https://www.unibo.it/it/campus-forli"><h3>Campus di Forli&grave;</h3></a></li>
-					               <li><a href="https://www.unibo.it/it/campus-cesena"><h3>Campus di Cesena</h3></a></li> 
-					               <li><a href="https://www.unibo.it/it/campus-rimini"><h3>Campus di Rimini</h3></a></li>
-				               </ul>
-						   
-				           <a href="http://www.unife.it/"><h3>Universita&grave; di Ferrara</h3></a>
-				           <a href="https://www.unimore.it/"><h3>Universita&grave; di Modena e Reggio Emilia </h3></a>
-				           <a href="https://www.unipr.it/"><h3>Universita&grave; di Parma </h3></a>
-				           <a href="https://piacenza.unicatt.it/"><h3>Universita&grave; cattolica del Sacro Cuore, sede di Piacenza</h3></a>
-				           <a href="https://www.polimi.it/"><h3>Politecnico di Milano, sede di Piacenza</h3> </a>
-				     
-				        </div>
-			</div>
-			
-			<div>
-				<button type="button" name="button" onclick="showMenu(dropdown_content)" class="dropbtn";>
-	                <a href="https://www.unibo.it/it/didattica/iscrizioni-trasferimenti-e-laurea/ripresa-e-interruzione-degli-studi/riprendere-studi">Modi per riprendere gli studi interrotti</a>
-            </div>
-			
-			<div>
-				<button type="button" name="button" onclick="showMenu(dropdown_content)" class="dropbtn";>
-	                <a href="https://www.agenzialavoro.emr.it/">Trovare lavoro in Emilia Romagna</a>
-            </div>
-			
-            <div>
-				<button type="button" name="button" onclick="showMenu(dropdown_content)" class="dropbtn";>
-	                <a href="https://www.corsitsemiliaromagna.it/">Formazione dopo il Diploma</a>
-            </div>			
-			
-				
-				
-				<div class="home">
-					<button class="btn"><a href="./index.html"><img src="./img/home istr.png"/></a></button>
-				</div>
-			</div>
+	<!--menu-->
 
- <!--
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-			-->
+      <nav>
+        <div class="menu-icon">
+          <i class="fas fa-bars" id="icon"></i>
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
+        <ul class="nav-links">
+         <li> <a class="link" href="./index.html">Home</a> </li>
+          <li> <a class="link" href="chi_siamo.html">Chi siamo</a> </li>
+          <li> <a class="link" href="http://www.informagiovanifaenza.it/news/">News</a> </li>
+          <li> <a class="link" href="http://www.informagiovaniravenna.it/newsletter-2/">Newsletters</a> </li>
+  		<li> <a class="link" href="informagiovani.html">Informagiovani <br/>nella tua citt&agrave</a></li>
+          <li> <a class="link" href="https://www.youngercard.it/">Youngercard</a> </li>
+          <li> <a class="link" href="http://www.informagiovanifaenza.it/progetti/esc-solidarity-youth/">ESC – Solidarity Youth</a> </li>
+          <li> <a class="link" href="applichiamoci.html">Applichiamoci</a> </li>
+          <li> <a class="link" href="consulta_ragazzi.html">Consulta dei ragazzi</a> </li>
+          <li> <a class="link" href="contatti.html">Contatti e orari</a> </li>
+        </ul>
+    </nav>
+
+
+    <div class="logo">
+      <div class=logo img><img class="logo" src=".\img\logo-informagiovani.png"/></div>
+    </div>
+
+
+    <div class="app">
+
+        <div class="page">
+
+				      <h1>Istruzione</h1>
+
+			        <div>
+					         <button type="button" name="button" onclick="showMenu(dropdown_content)" class="dropbtn";>Istituti di Scuola Secondaria Superiore <br/>Faenza - Riolo Terme &#9660;</button>
+
+    						    <div id="dropdown_content" class="dropdown_content_class">
+    				             <a href="http://www.itoriani.gov.it/joomlafap/index.php"><h3>Istituto Tecnico statale "A. Oriani"</h3> </a><br/>
+    				            <a href=" https://www.itipfaenza.edu.it"><h3>Istituto Tecnico e Professionale statale "L. Bucci"</h3> </a><br/>
+    				            <a href="http://www.liceotorricelli-ballardini.gov.it/"><h3>Liceo E. Torricelli</h3></a><br/>
+    				            <a href="http://www.persolinostrocchi.edu.it/"><h3>Istituto Professionale statale "Strocchi - Persolino"</h3> </a><br/>
+    				            <a href="http://www.coopcentrostudi.it/"><h3>Istituto Professionale paritario <br>  "U. Foscolo"</h3> </a><br/>
+    							      <a href="https://www.alberghieroriolo.gov.it/"><h3>	Istituto Alberghiero Statale "Pellegrino Artusi"</h3></a>
+    				        </div>
+			       </div>
+			<div>
+					<button type="button" name="button" class="dropbtn";>
+					       <a href="https://www.tuttitalia.it/emilia-romagna/14-scuole/">Scuole in Emilia Romagna
+					       <img class="link" src="./img/link.png"/></a>
+					</button>
+			</div>
+			<div>
+					<button type="button" name="button" onclick="showMenu(dropdown_content1)" class="dropbtn";>Universit&agrave; in Emilia Romagna &#9660;</button>
+
+						<div id="dropdown_content1" class="dropdown_content_class">
+						   <a href="https://www.unibo.it/it"><h3>Universit&agrave; di Bologna</h3> </a>
+
+			            <ul>
+					           <li class="tab"><a href="https://www.unibo.it/it/campus-ravenna"><h3>Campus di Ravenna</h3></a></li>
+					           <li class="tab"><a href="https://www.unibo.it/it/campus-forli"><h3 >Campus di Forl&igrave;</h3></a></li>
+					           <li class="tab"><a href="https://www.unibo.it/it/campus-cesena"><h3 >Campus di Cesena</h3></a></li>
+					           <li class="tab"><a href="https://www.unibo.it/it/campus-rimini"><h3 >Campus di Rimini</h3></a></li>
+				          </ul>
+
+						     <br/>
+
+				         <a href="http://www.unife.it/"><h3>Universit&agrave; di Ferrara</h3></a><br/>
+				         <a href="https://www.unimore.it/"><h3>Universit&agrave; di Modena e Reggio Emilia </h3></a><br/>
+		             <a href="https://www.unipr.it/"><h3>Universit&agrave; di Parma </h3></a><br/>
+	  	           <a href="https://piacenza.unicatt.it/"><h3>Universit&agrave; cattolica del Sacro Cuore, sede di Piacenza</h3></a><br/>
+			           <a href="https://www.polimi.it/"><h3>Politecnico di Milano, sede di Piacenza</h3> </a>
+				     </div>
+			  </div>
+
+			<div>
+				<button type="button" name="button" class="dropbtn";>
+	           <a href="https://www.unibo.it/it/didattica/iscrizioni-trasferimenti-e-laurea/ripresa-e-interruzione-degli-studi/riprendere-studi">Modi per riprendere gli studi interrotti
+					   <img class="link" src="./img/link.png"/></a>
+				</button>
+			</div>
+
+			<div>
+				    <button type="button" name="button" class="dropbtn";>
+	              <a href="https://www.agenzialavoro.emr.it/">Trovare lavoro in Emilia Romagna
+					      <img class="link" src="./img/link.png"/></a>
+				    </button>
+     </div>
+
+            <div>
+				          <button type="button" name="button" class="dropbtn";>
+	                   <a href="https://www.corsitsemiliaromagna.it/">Formazione dopo il Diploma
+					           <img class="link" src="./img/link.png"/></a>
+				       </button>
+            </div>
+
+
+
+				<div class="home">
+					  <button class="btn"><a href="./index.html"><img src="./img/home istr.png"/></a></button>
+				</div>
+
+
+        <script type="text/javascript" src="js/menu_new.js"></script> <!--menu!-->
         <script type="text/javascript" src="js/index.js"></script>
-		<script type="text/javascript" src="js/hamburgher.js"></script>
     </body>
 </html>

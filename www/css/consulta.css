@@ -39,31 +39,31 @@ body {
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size:12px;
     height:100%;
-    margin-top:5px;
-	margin-left:0px;
+    
+	margin-left:-18px;
 	margin-bottom:0px;
 	margin-right:0px;
     padding:0px;
-   
+	background-image: url(./sfondo/sfondo);
     width:100%;
 }
 
 .app {
-    background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
+    /*background:url(../img/logo-informagiovani.png) no-repeat center top;  170px x 200px */
     max-width:270px;                   /* text area width */
     text-align:center;
-    margin: 10px auto 50px;
+    margin: 0px auto;
+	padding: 0px;
+  position: relative;
+  bottom:80px;
 }
-}
-
 
 
 .page {
-	width: 270px;
+	width: 300px;
 	overflow: hidden;
 	margin: 0px 10 px;
 }
-
 h11 {
     font-size:24px;
     font-weight:normal;
@@ -86,7 +86,7 @@ h2 {
 	background-color: #e40f76;	
 	text-decoration:none;
 	line-height: 25px;
-	width: 270px;
+	width: 300px;
 }
 
 h3	{
@@ -102,7 +102,7 @@ h4 {
 	background-color: #e40f76;	
 	text-decoration:none;
 	padding-top: 5px;
-	width: 270px;
+	width: 300px;
 }
 
 p{
@@ -116,7 +116,7 @@ a:link, a:visited{color:white; text-decoration:none}
 
 
 
-/* hamburger e logo ____________________________________ */
+/* hamburger e logo ____________________________________ 
 
 .hamburgher
 {
@@ -148,17 +148,22 @@ a:link, a:visited{color:white; text-decoration:none}
 .contenuti a {
   color: #e40f76;
 }
-
+*/
 .logo{
 	float: right;
 	width: 85%;
 }
 
-.logo img{
-	width: 105%;
-	text-align: left;
+div.logo
+{
+  float:right;
+  position: relative;
+  bottom:50px;
 }
-
+img.logo
+{
+  width:250px;
+}
 /* ____________________________________ */
 
 
@@ -196,4 +201,142 @@ a:link, a:visited{color:white; text-decoration:none}
 .blink {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
+}
+
+
+/*menu nuovo */
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+nav
+{
+  position: relative;
+  width: 100%;
+  height: 100px;
+  z-index: 3;
+  float:left;
+  width:25%
+}
+a
+{
+  text-decoration: none;
+}
+.nav-links
+{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  float: right;
+}
+.nav-links li
+{
+  list-style: none;
+}
+a.link
+{
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  font-family: verdana;
+}
+div.menu-icon
+{
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  color: white;
+  font-size: 30px;
+  right:0;
+  display: none;
+}
+@media screen and (max-width: 3000px)
+{
+  .nav-links
+  {
+    position: fixed;
+    height: 100%;
+    width:100%;
+    background: black;
+    flex-direction: column;
+    left: -100%;
+    transition: 0.5s;
+  }
+  div.menu-icon
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    margin-right: 12px;
+  }
+  .nav-links.open
+  {
+    left:0;
+  }
+
+}
+
+.logo{
+	float: right;
+	width: 85%;
+}
+
+
+
+
+/*______________*/
+
+
+.event {
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    color:#FFFFFF;
+    font-size:12px;
+    margin:0px 30px;
+    padding:2px 0px;
+}
+
+.event.listening {
+    background-color:#333333;
+    display:block;
+}
+
+.event.received {
+    background-color:#4B946A;
+    display:none;
+}
+
+@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+
+.blink {
+    animation:fade 3000ms infinite;
+    -webkit-animation:fade 3000ms infinite;
+}
+
+button
+{
+	border-radius:20px;
+	margin-top:10px;
+}
+
+img.link
+{
+  position: relative;
+  top:5px;
+  float: right;
 }

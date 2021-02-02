@@ -15,7 +15,7 @@
     specific language governing permissions and limitations
     under the License.
 -->
-<html lang="en" dir="ltr">
+<html lang="it" dir="ltr">
     <head>
 
         <!--
@@ -27,100 +27,102 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-  
+
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        
+
 		<link rel="stylesheet" type="text/css" href="css/lavoro.css">
+		<link rel="stylesheet" href="./font-awesome/css/all.css"> <!-- menu !-->
         <title>Lavoro</title>
     </head>
-    
+
 	<body>
     <!--Oriani ITIP-->
-	
-	<!--Hamburgher-->	
 
-		<div class="hamburgher">
-			
-			<div class="Hamburger_button_class">
-			
-				<div class="logo">
-					<div class=logo img><img src=".\img\logo-informagiovani.png"/></div>
-				</div>
-			</div>
-		
-			<button type="button" name="Hamburger_button" id="Hamburger_button" onclick="Hamburger(Cross_button, Hamburger_button, contenuti)"><img id="Hamburger_img" src="./img/menu-filled.png" alt="Hamburgher" height="28" width="28"></button>
-		
-		
-			<div class="Cross_button_class">
-			  <button type="button" name="Cross_button" id="Cross_button" onclick="Cross(Cross_button, Hamburger_button, contenuti)"><img src="./img/delete-sign.png" alt="Cross" height="28" width="28"></button>
-			</div>
-			<div class="contenuti" id="contenuti">
-			  <a href="./index.html">Home</a> <br/>
-			  <a href="./chi_siamo.html">Chi siamo</a> <br/>
-			  <a href="http://www.informagiovanifaenza.it/news/">News</a> <br/>
-			  <a href="http://www.informagiovaniravenna.it/newsletter-2/">Newsletters</a> <br/>
-			  <a href="https://www.youngercard.it/">Youngercard</a><br/>
-			  <a href="./applichiamoci.html">Applichiamoci</a><br/>
-			  <a href="./consulta_ragazzi.html">Consulta dei ragazzi</a><br/>
-			  <a href="./contatti.html">Contatti e orari</a><br/>
+	<!--Hamburgher-->
+<div>
+			<nav>
+      <div class="menu-icon">
+        <i class="fas fa-bars" id="icon" ></i>
+      </div>
+      <ul class="nav-links">
+        <li> <a class="link" href="./index.html">Home</a> </li>
+        <li> <a class="link" href="chi_siamo.html">Chi siamo</a> </li>
+        <li> <a class="link" href="http://www.informagiovanifaenza.it/news/">News</a> </li>
+        <li> <a class="link" href="http://www.informagiovaniravenna.it/newsletter-2/">Newsletters</a> </li>
+		<li> <a class="link" href="informagiovani.html">Informagiovani<br>nella tua città</a></li>
+        <li> <a class="link" href="https://www.youngercard.it/">Youngercard</a> </li>
+        <li> <a class="link" href="http://www.informagiovanifaenza.it/progetti/esc-solidarity-youth/">ESC – Solidarity Youth</a> </li>
+        <li> <a class="link" href="applichiamoci.html">Applichiamoci</a> </li>
+        <li> <a class="link" href="consulta_ragazzi.html">Consulta dei ragazzi</a> </li>
+        <li> <a class="link" href="contatti.html">Contatti e orari</a> </li>
 
-			</div>
-		</div>
-        
-		
+      </ul>
+  </nav>
+
+  <div class="logo">
+    <div class=logo><img class="logo" src=".\img\logo-informagiovani.png"/></div>
+  </div>
+</div>
+
 		<div class="app">
-    
-		
+
+
 			<div class="page">
-			
-			    <h1>Lavoro</h1>	
+
+			    <h1>Lavoro</h1>
 			    <div>
-					<button type="button" name="button" onclick="showMenu(dropdown_content)" class="dropbtn";>Curriculum Vitae</button>
-					
+					      <button type="button" name="button" onclick="showMenu(dropdown_content)" class="dropbtn">Curriculum Vitae &#9660; </button>
+
 						<div id="dropdown_content" class="dropdown_content_class">
-							<a href="https://europass.cedefop.europa.eu/it/documents/curriculum-vitae"><h3>Scarica CV</h3></a>
-							<a href="https://europass.cedefop.europa.eu/editors/it/cv/compose"><h3>Come compilare CV</h3></a>
+							<a href="https://europass.cedefop.europa.eu/it/documents/curriculum-vitae"><h3>Scarica CV</h3></a><br/>
+							<a href="https://europass.cedefop.europa.eu/editors/it/cv/compose"><h3>Come compilare CV</h3></a><br/>
 							<a href="http://www.informagiovanifaenza.it/lavoro/"><h3>Dove andare per un aiuto per compilare CV</h3></a>
-						</div>	
+						</div>
 				</div>
-			    
+
 				<div>
-					<button type="button" name="button" onclick="showMenu(dropdown_content)" class="dropbtn";>
-					<a href="http://www.agenzialavoro.emr.it/ravenna">Offerte di lavoro a Faenza e dintorni</button></a>
+					<button type="button" name="button"  class="dropbtn">
+						<a href="http://www.agenzialavoro.emr.it/ravenna">Offerte di lavoro a Faenza e dintorni
+						<img class="link" src="./img/link.png"/></a>
+					</button>
 				</div>
-				
+
 				<div>
-					<button type="button" name="button" onclick="showMenu(dropdown_content)" class="dropbtn";>
-					<a href="http://formazionelavoro.regione.emilia-romagna.it/corsi-di-formazione-in-emilia-romagna">Corsi formazione e lavoro</button></a>
+					<button type="button" name="button" class="dropbtn";>
+					       <a href="http://formazionelavoro.regione.emilia-romagna.it/corsi-di-formazione-in-emilia-romagna">Corsi formazione e lavoro
+							   <img class="link" src="./img/link.png"/></a>
+					</button>
 				</div>
-				
+
 				<div>
-					<button type="button" name="button" onclick="showMenu(dropdown_content)" class="dropbtn";>
-					<a href="http://www.agenzialavoro.emr.it/ravenna/le-sedi-di-ravenna">Centri per l'Impiego <br/> Faenza - Lugo - Ravenna</button></a>
+					<button type="button" name="button" class="dropbtn";>
+					    <a href="http://www.agenzialavoro.emr.it/ravenna/le-sedi-di-ravenna">Centri per l'Impiego <br/> Faenza - Lugo - Ravenna
+						 <img class="link" src="./img/link.png"/></a>
+					</button>
 				</div>
-				
+
 				<div>
-					<button type="button" name="button" onclick="showMenu(dropdown_content)" class="dropbtn";>
-					<a href="http://www.informagiovanifaenza.it/contatti-e-orari/">Come ottenere un appuntamento di lavoro</button></a>
+					<button type="button" name="button" class="dropbtn";>
+					    <a href="http://www.informagiovanifaenza.it/contatti-e-orari/">Come ottenere un appuntamento di lavoro
+					   <img class="link" src="./img/link.png"/></a>
+					</button>
 				</div>
+
 			
-			</div>
-						
+
 			<div class="home">
 				<button class="btn"><a href="./index.html"><img src="./img/home - lav.png"/></a></button>
 			</div>
-				
-	<!--		
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-			-->
-        </div>
-        <script type="text/javascript" src="cordova.js"></script>
+		</div>
+	</div>
+
+
         <script type="text/javascript" src="js/index.js"></script>
 		<script type="text/javascript" src="js/hamburgher.js"></script>
+		<script type="text/javascript" src="js/menu_new.js"></script>
+     	<!-- menu !-->
+
     </body>
 </html>

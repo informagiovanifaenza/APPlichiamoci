@@ -37,14 +37,16 @@ body {
     );
     /*background-attachment:fixed;*/
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
-    font-size:12px;
+   font-size:12px;
     height:100%;
-    margin-top:5px;
-	margin-left:0px;
+
+	margin-left:-18px;
 	margin-bottom:0px;
 	margin-right:0px;
     padding:0px;
     width:100%;
+
+	background-image: url(./sfondo/sfondo)
 }
 
 /* Portrait layout (default) */
@@ -53,15 +55,19 @@ body {
     max-width:270px;                   /* text area width */
     text-align:center;
     margin: 0px auto;
-	padding: 0px;
+	  padding: 0px;
+    position: relative;
+    bottom:80px;
 }
 
 
 .page {
-	width: 270px;
+	width: 300px;
 	overflow: hidden;
 	margin: 0px 10 px;
+
 }
+
 
 h11 {
     font-size:24px;
@@ -73,25 +79,26 @@ h11 {
 }
 
 /*Oriani*/
-h1	{   
-	font-family: courier,sans-serif; 
-	font-size: 30px; 
+h1	{
+	font-family: courier,sans-serif;
+	font-size: 30px;
 	line-height:24px;
 	text-align:left;
+  padding-bottom:20px;
 }
 
 h2 {
 	height: 45px;
-	font-size: 120%; 
+	font-size: 120%;
 	color: white;
-	background-color: #e40f76;	
+	background-color: #e40f76;
 	text-decoration:none;
 	line-height: 45px;
 	width: 270px;
 }
 
 h3{
-	font-size: 110%; 
+	font-size: 110%;
 	text-align: left;
 	color: #e40f76;
 }
@@ -99,7 +106,7 @@ h3{
 
 h4 {
 	height: 45px;
-	font-size: 120%; 
+	font-size: 120%;
 	color: white;
 	background-color: #e40f76;
 	text-decoration:none;
@@ -109,6 +116,7 @@ h4 {
 
 a:link, a:visited{color:white; text-decoration:none}
 
+/*bottone home*/
 /*bottone home*/
 .home {
   float: clear;
@@ -141,25 +149,25 @@ a:link, a:visited{color:white; text-decoration:none}
 .home .btn:hover {
   background-color: grey;
   top: 10px;
- 
+
 }
 
 /* Bottone */
 .dropbtn {
-  background-color: #e40f76;			
+  background-color: #e40f76;
   color: white;
   padding: 16px;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
-  width: 270px;
+  width: 300px;
 }
 
 
 /*contenuto del menu */
 .dropdown_content_class {
   display: none;
-  position: sticky;    
+  position: sticky;
   padding: 16px;
   margin-bottom: 30px;
   width: 270px;
@@ -168,11 +176,11 @@ a:link, a:visited{color:white; text-decoration:none}
 }
 
 
-/* hamburger e logo ____________________________________ */
+/* hamburger e logo ____________________________________
 
 .hamburgher
 {
-	max-width:270px;                   
+	max-width:270px;
     text-align:center;
     margin: 0px auto;
 	padding: 0px;
@@ -200,16 +208,112 @@ a:link, a:visited{color:white; text-decoration:none}
 .contenuti a {
   color: #e40f76;
 }
-
+*/
 .logo{
 	float: right;
 	width: 85%;
 }
 
-.logo img{
-	width: 105%;
-	text-align: left;
+div.logo
+{
+  float:right;
+  position: relative;
+  bottom:50px;
 }
+img.logo
+{
+  width:250px;
+}
+
+/*menu nuovo */
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+nav
+{
+  position: relative;
+  width: 100%;
+  height: 100px;
+  z-index: 3;
+  float:left;
+  width:25%
+}
+a
+{
+  text-decoration: none;
+}
+.nav-links
+{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  float: right;
+}
+.nav-links li
+{
+  list-style: none;
+}
+a.link
+{
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  font-family: verdana;
+}
+div.menu-icon
+{
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  color: white;
+  font-size: 30px;
+  right:0;
+  display: none;
+}
+@media screen and (max-width: 3000px)
+{
+  .nav-links
+  {
+    position: fixed;
+    height: 102%;
+    width:100%;
+    background: black;
+    flex-direction: column;
+    left: -100%;
+    transition: 0.5s;
+    margin-top:-10px;
+  }
+  div.menu-icon
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    margin-right: 12px;
+  }
+  .nav-links.open
+  {
+    left:0;
+  }
+
+}
+
+div.immagine_logo
+{
+  text-align: right;
+  margin-right:10%;
+}
+img.immagine_logo
+{
+  height:90px;
+}
+
+
 
 /*______________*/
 
@@ -238,14 +342,27 @@ a:link, a:visited{color:white; text-decoration:none}
     50% { opacity: 0.4; }
     to { opacity: 1.0; }
 }
- 
+
 @-webkit-keyframes fade {
     from { opacity: 1.0; }
     50% { opacity: 0.4; }
     to { opacity: 1.0; }
 }
- 
+
 .blink {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
+}
+
+button
+{
+	border-radius:20px;
+	margin-top:10px;
+}
+
+img.link
+{
+  position: relative;
+  top:5px;
+  float: right;
 }

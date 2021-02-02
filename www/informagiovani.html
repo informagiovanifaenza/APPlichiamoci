@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+    http://www.apache.org/licenses/LICENSE-2.0
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html lang="it" dir="ltr">
+    <head>
+
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+		-->
+
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/informagiovani.css">
+        <link rel="stylesheet" href="./font-awesome/css/all.css"> <!-- menu !-->
+
+        <title>Informagiovani nella tua città</title>
+    </head>
+    <body>
+
+	<!--Oriani-->
+
+	<!--Hamburgher-->
+
+    <nav>
+      <div class="menu-icon">
+        <i class="fas fa-bars" id="icon" ></i>
+      </div>
+      <ul class="nav-links">
+        <li> <a class="link" href="./index.html">Home</a> </li>
+        <li> <a class="link" href="chi_siamo.html">Chi siamo</a> </li>
+        <li> <a class="link" href="http://www.informagiovanifaenza.it/news/">News</a> </li>
+        <li> <a class="link" href="http://www.informagiovaniravenna.it/newsletter-2/">Newsletters</a> </li>
+		<li> <a class="link" href="informagiovani.html">Informagiovani <br/>nella tua citt&agrave</a></li>
+        <li> <a class="link" href="https://www.youngercard.it/">Youngercard</a> </li>
+        <li> <a class="link" href="http://www.informagiovanifaenza.it/progetti/esc-solidarity-youth/">ESC – Solidarity Youth</a> </li>
+        <li> <a class="link" href="applichiamoci.html">Applichiamoci</a> </li>
+        <li> <a class="link" href="consulta_ragazzi.html">Consulta dei ragazzi</a> </li>
+        <li> <a class="link" href="contatti.html">Contatti e orari</a> </li>
+
+      </ul>
+  </nav>
+
+
+  <div class="logo">
+    <div class=logo img><img class="logo" src=".\img\logo-informagiovani.png"/></div>
+  </div>
+
+
+  <div class="app">
+
+
+			<div class="page">
+
+				<h1>Informagiovani nella tua città</h1>
+
+			<div>
+					<button type="button" name="button" onclick="showMenu(dropdown_content)" class="dropbtn" ;>
+					       <a href="http://www.informagiovanifaenza.it/">Informagiovani Faenza
+					       <img class="link" src="./img/link.png"/></a>
+					</button>
+			</div>
+			<div>
+					<button type="button" name="button" onclick="showMenu(dropdown_content)" class="dropbtn1" ;>
+					       <a href="http://www.informagiovaniravenna.it/">Informagiovani Ravenna
+					       <img class="link" src="./img/link.png"/></a>
+					</button>
+			</div>
+			<div>
+					<button type="button" name="button" onclick="showMenu(dropdown_content)" class="dropbtn2";>
+					       <a href="https://www.facebook.com/informagiovanirussi/">Informagiovani Russi
+					       <img class="link" src="./img/link.png"/></a>
+					</button>
+			</div>
+
+			<div>
+				<button type="button" name="button" onclick="showMenu(dropdown_content)" class="dropbtn3";>
+	           <a href="https://www.facebook.com/informagiovanilugo/">Informagiovani Lugo
+					   <img class="link" src="./img/link.png"/></a>
+				</button>
+			</div>
+
+			<div>
+				<button type="button" name="button" onclick="showMenu(dropdown_content)" class="dropbtn4";>
+	              <a href="https://www.facebook.com/iglidoadriano/">Informagiovani Lido Adriano
+					      <img class="link" src="./img/link.png"/></a>
+				</button>
+            </div>
+
+				<div class="home">
+					<button class="btn"><a href="./index.html"><img src="./img/home - est.png"/></a></button>
+				</div>
+			</div>
+        </div>
+        <script type="text/javascript" src="js/menu_new.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/hamburgher.js"></script>
+    </body>
+</html>

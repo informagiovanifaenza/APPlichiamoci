@@ -1,98 +1,63 @@
-<!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-    http://www.apache.org/licenses/LICENSE-2.0
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
 <html>
-    <head>
-        <!--
-        Customize this policy to fit your own app's needs. For more guidance, see:
-            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
-        Some notes:
-            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-                * Enable inline JS: add 'unsafe-inline' to default-src
-        -->
-        <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
-        -->
-		<meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-        <title>Informagiovani Faenza</title>
-    </head>
-    <body>
-	
-	<!--Hamburgher-->	
+  <head>
+      <link rel="stylesheet" href="./css/index.css" type="text/css">
+      <link rel="stylesheet" href="./font-awesome/css/home.css" type="text/css"> <!--menu
+	  <link rel="stylesheet" href="./font-awesome/css/fontawesome.min.css"> !-->
+  </head>
 
-		<div class="hamburgher">
-		
-			<button type="button" name="Hamburger_button" id="Hamburger_button" onclick="Hamburger(Cross_button, Hamburger_button, contenuti)"><img id="Hamburger_img" src="./img/menu-filled.png" alt="Hamburgher" height="28" width="28"></button>
-		
-		
-			<div class="Cross_button_class">
-			  <button type="button" name="Cross_button" id="Cross_button" onclick="Cross(Cross_button, Hamburger_button, contenuti)"><img src="./img/delete-sign.png" alt="Cross" height="28" width="28"></button>
-			</div>
-			<div class="contenuti" id="contenuti">
-			
-			  <a href="./chi_siamo.html"><font color="#e40f76">Chi siamo</font></a> <br/>
-			  <a href="http://www.informagiovanifaenza.it/news/"><font color="#2085b1">News</font></a><br/>
-			  <a href="http://www.informagiovaniravenna.it/newsletter-2/"><font color="#b26c01">Newsletters</font></a> <br/>
-			  <a href="https://www.youngercard.it/"><font color="#68830e">Youngercard</font></a><br/>
-			  <a href="./applichiamoci.html"><font color="#94271f">Applichiamoci</font></a><br/>
-			  <a href="./consulta_ragazzi.html"><font color="#e40f76">Consulta dei ragazzi</font></a><br/> 
-			  <a href="./contatti.html"><font color="#2085b1">Contatti e orari</font></a><br/>
-			</div>
-		</div>
-		
-		
-        <div class="app">
-            
-			
-	<!--Oriani-->
-			
-			<img src="./img/logo-informagiovani.png"/>
-			
-			<div class="menu-index-page">	
-				<a href="./lavoro.html"><img src="img/lavoro.png"/></a>
-				<a href="./formazione.html"><img src="img/formazione.png"/></a>
-				<a href="./istruzione.html"><img src="img/istruzione.png"/></a>
-				<a href="./tempo libero.html"><img src="img/tempo libero.png"/></a>
-				<a href="./volontariato.html"><img src="img/volontariato1.png"/></a>
-				<a href="./estero.html"><img src="img/estero.png"/></a>
-			</div>
+  <body>
 
-        
-		
-		<div>
-			<br/><i><font size="5pt">Informagiovani Faenza</font></i><br/>
-			<br/>Piazza della Molinella (Piazza Nenni) - 48018 Faenza<br/>
-			Tel: 0546 691878<br/>
-			<a href="mailto:informagiovani@romagnafaentina.it"><font color="blue">informagiovani@romagnafaentina.it</font></a><br/>
-			</div>
-		</div>
-		
-		
-		
-		 <!--   <div id="deviceready" class="blink">
-					<p class="event listening">Connecting to Device</p>
-					<p class="event received">Device is Ready</p>
-				</div> -->
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-		<script type="text/javascript" src="js/hamburgher.js"></script>
-    </body>
+
+    <nav>
+        <div class="menu-icon">
+          <i class="fa fa-bars" id="icon" style="color:white" ></i>
+        </div>
+        <ul class="nav-links">
+		  <li> <a class="link" href="./index.html">Home</a> </li>
+          <li> <a class="link" href="chi_siamo.html">Chi siamo</a> </li>
+          <li> <a class="link" href="http://www.informagiovanifaenza.it/news/">News</a> </li>
+          <li> <a class="link" href="http://www.informagiovaniravenna.it/newsletter-2/">Newsletters</a> </li>
+		  <li> <a class="link" href="informagiovani.html">Informagiovani <br/>nella tua città</a></li>
+          <li> <a class="link" href="https://www.youngercard.it/">Youngercard</a> </li>
+		  <li> <a class="link" href="http://www.informagiovanifaenza.it/progetti/esc-solidarity-youth/">ESC – Solidarity Youth</a> </li>
+		  <li> <a class="link" href="applichiamoci.html">Applichiamoci</a> </li>
+          <li> <a class="link" href="consulta_ragazzi.html">Consulta dei ragazzi</a> </li>
+          <li> <a class="link" href="contatti.html">Contatti e orari</a> </li>
+
+        </ul>
+    </nav>
+
+
+      <div class="logo">
+          <figure>
+            <img class="logo" src="./img/logo.png">
+          </figure>
+      </div>
+
+
+        <div class="container">
+          <table class="table1">
+              <tr>
+                  <td><a href="./lavoro.html"><img class="icona" src="./img/lavoro1.png"><br>Lavoro</a></td>
+                  <td><a href="./formazione.html"><img class="icon" src="./img/formazione1.png"><br>Formazione</a></td>
+                  <td><a href="./istruzione.html"><img class="icon" src="./img/istruzione1.png"><br>Istruzione</a></td>
+              </tr>
+
+              <tr>
+                  <td><a href="./volontariato.html"><img class="icon" src="./img/volontariato.png"><br>Volontariato</a></td>
+                  <td><a href="./estero.html"><img class="icon" src="./img/estero2.png"><br>Estero</a></td>
+                  <td><a href="./tempo libero.html"><img class="icon" src="./img/tempo.png"><br>Tempo libero</a></td>
+              </tr>
+
+            </table>
+
+      </div>
+
+     <!-- menu !-->
+	<script type="text/javascript" src="js/menu_new.js"></script>
+
+
+
+   
+  </body>
 </html>

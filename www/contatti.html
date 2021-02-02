@@ -26,57 +26,55 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-		
+
         <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
         -->
 		<meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        
+
 		<link rel="stylesheet" type="text/css" href="css/contatti.css">
+    <link rel="stylesheet" href="./font-awesome/css/all.css">
         <title>Contatti e Orari</title>
     </head>
-	
+
     <body>
-	
+
 	<!--Oriani ITIP-->
-	
-	<!--Hamburger-->	
 
-		<div class="hamburgher">
-			
-			<div class="Hamburger_button_class">
-			
-				<div class="logo">
-					<div class=logo img><img src=".\img\logo-informagiovani.png"/></div>
-				</div>
-			</div>
-		
-			<button type="button" name="Hamburger_button" id="Hamburger_button" onclick="Hamburger(Cross_button, Hamburger_button, contenuti)"><img id="Hamburger_img" src="./img/menu-filled.png" alt="Hamburgher" height="28" width="28"></button>
-		
-		
-			<div class="Cross_button_class">
-			  <button type="button" name="Cross_button" id="Cross_button" onclick="Cross(Cross_button, Hamburger_button, contenuti)"><img src="./img/delete-sign.png" alt="Cross" height="28" width="28"></button>
-			</div>
-			<div class="contenuti" id="contenuti">
-			  <a href="./index.html">Home</a><br/>
-			  <a href="./chi_siamo.html">Chi siamo</a> <br/>
-			  <a href="http://www.informagiovanifaenza.it/news/">News</a> <br/>
-			  <a href="http://www.informagiovaniravenna.it/newsletter-2/">Newsletters</a> <br/>
-			  <a href="https://www.youngercard.it/">Youngercard</a><br/>
-			  <a href="./applichiamoci.html">Applichiamoci</a><br/>
-			  <a href="./consulta_ragazzi.html">Consulta dei ragazzi</a><br/>
+	<!--Hamburger-->
 
-			</div>
-		</div>
-        
-		
+  <nav>
+    <div class="menu-icon">
+      <i class="fas fa-bars" id="icon"></i>
+    </div>
+    <ul class="nav-links">
+      <li> <a class="link" href="./index.html">Home</a> </li>
+      <li> <a class="link" href="chi_siamo.html">Chi siamo</a> </li>
+      <li> <a class="link" href="http://www.informagiovanifaenza.it/news/">News</a> </li>
+      <li> <a class="link" href="http://www.informagiovaniravenna.it/newsletter-2/">Newsletters</a> </li>
+      <li> <a class="link" href="informagiovani.html">Informagiovani</br>nella tua città</a></li>
+      <li> <a class="link" href="https://www.youngercard.it/">Youngercard</a> </li>
+      <li> <a class="link" href="http://www.informagiovanifaenza.it/progetti/esc-solidarity-youth/">ESC – Solidarity Youth</a> </li>
+      <li> <a class="link" href="applichiamoci.html">Applichiamoci</a> </li>
+      <li> <a class="link" href="consulta_ragazzi.html">Consulta dei ragazzi</a> </li>
+      <li> <a class="link" href="contatti.html">Contatti e orari</a> </li>
+
+    </ul>
+</nav>
+
+<div class="logo">
+  <div class=logo img><img class="logo" src=".\img\logo-informagiovani.png"/></div>
+</div>
+</div>
+
 		<div class="app">
-    
-		
+
+
 			<div class="page">
 				<h1>Contatti e <br/> Orari</h1>
-				
+				<br/>
+				<br/>
 				<div class="entry-content">
 						<div>
 							<h3>Contatti</h3>
@@ -85,25 +83,28 @@
 							Tel: 0546 69 18 78<br>
 							<a href="mailto:informagiovani@romagnafaentina.it"> email: informagiovani@romagnafaentina.it</a>
 						</div>
+						<br>
+						<br>
 						<div>
-							<h3>Orari</h3>
-							<div>Luned&#236 &#8211 dalle 10:00 alle 12:00</div>
-							<div>Mercoled&#236 &#8211 dalle 15:00 alle 17:00</div>
-							<div>Venerd&#236 &#8211 dalle 10:00 alle 12:00</div>
-							
+							<h3 class="orari">Orari</h3>
+							<div>Luned&#236 &#8211; dalle 10:00 alle 12:00</div>
+							<div>Mercoled&#236 &#8211; dalle 15:00 alle 17:00</div>
+							<div>Venerd&#236 &#8211; dalle 10:00 alle 12:00</div>
+
 							<p>&nbsp;</p>
 						</div>
 				</div>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2856.1811481920076!2d11.880077515791927!3d44.28566331932002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132b4e23d461964f%3A0x94e37fb8406f08dd!2sInformagiovani%20dell%E2%80%99Unione%20della%20Romagna%20Faentina!5e0!3m2!1sit!2sit!4v1582121024547!5m2!1sit!2sit" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 			<!--
- 
+
             <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>
                 <p class="event received">Device is Ready</p>
             </div>  -->
-			
+
         </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
-		<script type="text/javascript" src="js/hamburgher.js"></script>
+		<script type="text/javascript" src="js/menu_new.js"></script>
     </body>
 </html>
