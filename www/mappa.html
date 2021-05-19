@@ -1,0 +1,106 @@
+<html lang="en" dir="ltr">
+
+<head>
+    <title>Mappa</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+    <link rel="stylesheet" href="css/mappa.css">
+
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+    <link rel="stylesheet" type="text/css" href="css/contatti.css">
+    <link rel="stylesheet" href="./font-awesome/css/all.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css">
+
+    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+
+</head>
+
+<body>
+
+    <nav>
+        <div class=" menu-icon">
+            <i class="fas fa-bars" id="icon"></i>
+        </div>
+        <ul class="nav-links">
+            <li> <a class="link" href="./index.html">Home</a> </li>
+             <li> <a class="link" href="chi_siamo.html">Chi siamo</a> </li>
+             <li> <a class="link" href="http://www.informagiovanifaenza.it/news/">News</a> </li>
+             <li> <a class="link" href="http://www.informagiovaniravenna.it/newsletter-2/">Newsletters</a> </li>
+             <li> <a class="link" href="informagiovani.html">Informagiovani <br/>nella tua citt&agrave</a></li>
+            <li> <a class="link" href="http://www.informagiovanifaenza.it/progetti/">Progetti</a></li>
+             <li> <a class="link" href="applichiamoci.html">Applichiamoci</a> </li>
+             <li> <a class="link" href="consulta_ragazzi.html">Consulta dei ragazzi</a> </li>
+            <li> <a class="link" href="http://www.informagiovanifaenza.it/video">Video</a></li>
+             <li> <a class="link" href="contatti.html">Contatti e orari</a> </li>
+
+        </ul>
+    </nav>
+
+    <div class="logo">
+        <div class=logo img><img class="logo" src=".\img\logo-informagiovani.png" /></div>
+    </div>
+
+    <div class="app" id="map_app">
+        <div class="page" id="mapPage">
+            <div id="buttonContainer">
+                <button id="bBaracca" onclick="mostraTipologia('B')">
+                    <span class="bottoniSpan">Far Baracca</span>
+                </button>
+                <button id="bStorico" onclick="mostraTipologia('C')">
+                    <span class="bottoniSpan">Storico Culturale</span>
+                </button>
+                <button id="bSport" onclick="mostraTipologia('S')">
+                    <span class="bottoniSpan">Sport</span>
+                </button>
+                <button id="bGreen" onclick="mostraTipologia('G')">
+                    <span class="bottoniSpan">Green</span>
+                </button>
+                <button id="bUtilita" onclick="mostraTipologia('U')">
+                    <span class="bottoniSpan">Utilità</span>
+                </button>
+                <button id="bTutti" onclick="mostraTipologia('')">
+                    <span class="bottoniSpan">Visualizza tutti</span>
+                </button>
+            </div> <br> <br>
+            <div id="Map" class="leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom" tabindex="0">
+                <div class="leaflet-control-container">
+                    <div class="leaflet-top leaflet-left">
+                        <div class="leaflet-control-zoom leaflet-bar leaflet-control">
+                            <a class="leaflet-control-zoom-in" href="#" title="Zoom in" role="button" aria-label="Zoom in">+</a>
+                            <a class="leaflet-control-zoom-out" href="#" title="Zoom out" role="button" aria-label="Zoom out">−</a>
+                        </div>
+                    </div>
+                    <div class="leaflet-top leaflet-right"></div>
+                    <div class="leaflet-bottom leaflet-left"></div>
+                    <div class="leaflet-bottom leaflet-right">
+                        <div class="leaflet-control-attribution leaflet-control"><a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> | Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery ©
+                            <a href="https://www.mapbox.com/">Mapbox</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="leaflet-pane leaflet-shadow-pane"></div>
+                <div class="leaflet-pane leaflet-overlay-pane"></div>
+                <div class="leaflet-pane leaflet-marker-pane"></div>
+                <div class="leaflet-pane leaflet-tooltip-pane"></div>
+                <div class="leaflet-pane leaflet-popup-pane"></div>
+                <div class="leaflet-proxy leaflet-zoom-animated" style="transform: translate3d(1.04805e+06px, 697379px, 0px) scale(4096);"></div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/menu_new.js"></script>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <script src="js/mappa.js"></script>
+
+</body>
+
+</html>
