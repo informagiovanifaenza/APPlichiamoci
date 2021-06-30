@@ -23,7 +23,7 @@
 
 </head>
 
-<body>
+<body onload="mostraTipologia('')">
 
     <nav>
         <div class=" menu-icon">
@@ -48,9 +48,12 @@
         <div class=logo img><img class="logo" src=".\img\logo-informagiovani.png" /></div>
     </div>
 
-    <div class="app" id="map_app">
+    <div class="app" id="map_app">	
         <div class="page" id="mapPage">
+			<div id="disclaimer">La mappa emotiva è un progetto promosso dall’Informagiovani dell’Unione della Romagna Faentina, che si propone di migliorare 
+			la conoscenza delle opportunità offerte dal territorio.</div>
             <div id="buttonContainer">
+			
                 <button id="bBaracca" onclick="mostraTipologia('B')">
                     <span class="bottoniSpan">Far Baracca</span>
                 </button>
