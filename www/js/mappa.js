@@ -14,7 +14,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 }).addTo(mymap);
 
 function readFromFile() {
-    d3.tsv("https://ricercazione.com/applichiamoci_map_points/mappa.tsv", function(d) {
+    d3.tsv("https://www.informagiovanifaenza.it/applichiamoci_map_points/mappa.tsv", function(d) {
         mapArray = d;
     });
 }
@@ -223,7 +223,7 @@ function newPage(luogo, tipologia, emozioni, indirizzo, latitudine, longitudine,
     window.localStorage.setItem("indirizzo", indirizzo);
     window.localStorage.setItem("latitudine", latitudine);
     window.localStorage.setItem("longitudine", longitudine);
-    window.localStorage.setItem("descrizione", curiosita);
+    window.localStorage.setItem("descrizione", descrizione);
     window.localStorage.setItem("curiosita", curiosita);
     window.localStorage.setItem("deviProvare", deviProvare);
     window.localStorage.setItem("link", link);
