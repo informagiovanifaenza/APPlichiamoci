@@ -40,7 +40,8 @@ td
 {
   font-size: 15pt;
   color: white;
-  padding:5px;
+
+  width:33%;
 }
 
 img.icon
@@ -52,6 +53,17 @@ img.icona
 {
   width:78px;
 }
+
+img.icohp
+{
+  width:85px;
+}
+
+img.icomappa
+{
+  width:100px;
+}
+
 
 
 

@@ -27,20 +27,17 @@
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
 
-		<!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
-        -->
-
 		<meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
 
-		<link rel="stylesheet" type="text/css" href="css/formazione.css">
+		<link rel="stylesheet" type="text/css" href="css/unico.css">
 		<link rel="stylesheet" href="./font-awesome/css/all.css"> <!-- menu !-->
 
         <title>FORMAZIONE</title>
     </head>
 
-    <body>
+    <body class="formazione">
 
 	<!--Oriani-->
 
@@ -51,16 +48,16 @@
         <i class="fas fa-bars" id="icon"></i>
       </div>
       <ul class="nav-links">
-        <li> <a class="link" href="./index.html">Home</a> </li>
-        <li> <a class="link" href="chi_siamo.html">Chi siamo</a> </li>
-        <li> <a class="link" href="http://www.informagiovanifaenza.it/news/">News</a> </li>
-        <li> <a class="link" href="http://www.informagiovaniravenna.it/newsletter-2/">Newsletters</a> </li>
-		<li> <a class="link" href="informagiovani.html">Informagiovani <br/>nella tua citt&agrave</a></li>
-        <li> <a class="link" href="https://www.youngercard.it/">Youngercard</a> </li>
-        <li> <a class="link" href="http://www.informagiovanifaenza.it/progetti/esc-solidarity-youth/">ESC – Solidarity Youth</a> </li>
-        <li> <a class="link" href="applichiamoci.html">Applichiamoci</a> </li>
-        <li> <a class="link" href="consulta_ragazzi.html">Consulta dei ragazzi</a> </li>
-        <li> <a class="link" href="contatti.html">Contatti e orari</a> </li>
+			<li> <a class="link" href="./index.html">Home</a> </li>
+             <li> <a class="link" href="chi_siamo.html">Chi siamo</a> </li>
+             <li> <a class="link" href="http://www.informagiovanifaenza.it/news/">News</a> </li>
+             <li> <a class="link" href="http://www.informagiovaniravenna.it/newsletter-2/">Newsletters</a> </li>
+             <li> <a class="link" href="informagiovani.html">Informagiovani <br/>nella tua citt&agrave</a></li>
+            <li> <a class="link" href="http://www.informagiovanifaenza.it/progetti/">Progetti</a></li>
+             <li> <a class="link" href="applichiamoci.html">Applichiamoci</a> </li>
+             <li> <a class="link" href="consulta_ragazzi.html">Consulta dei ragazzi</a> </li>
+            <li> <a class="link" href="http://www.informagiovanifaenza.it/video">Video</a></li>
+             <li> <a class="link" href="contatti.html">Contatti e orari</a> </li>
 
       </ul>
   </nav>
@@ -76,7 +73,7 @@
 				<h1>Formazione</h1>
 
 				<div>
-					<button type="button" name="button" class="dropbtn";>
+					<button type="button" name="button" class="dropbtn_formazione";>
 					<a href="http://www.informagiovaniravenna.it/formazione/formazione-corsi/">Corsi gratuiti e a pagamento
 					<img class="link" src="./img/link.png"/>
 					</a>
@@ -84,14 +81,29 @@
 				</div>
 
 				<div>
-					<button type="button" name="button" class="dropbtn";>
-					<a href="https://www.corsitsemiliaromagna.it">Corsi IFTS Emilia Romagna
+					<button type="button" name="button" class="dropbtn_formazione";>
+					<a href="https://www.agenzialavoro.emr.it/ravenna/servizi/per-le-persone/corsi-di-formazione">Corsi-Centro per l'impiego
+					<img class="link" src="./img/link.png"/></a>
+					</button>
+				
+				</div>
+								<div>
+					<button type="button" name="button" class="dropbtn_formazione";>
+					<a href="https://www.corsitsemiliaromagna.it">Corsi ITS Emilia Romagna
 					<img class="link" src="./img/link.png"/></a>
 					</button>
 				</div>
 
 				<div>
-					<button type="button" name="button" onclick="showMenu(dropdown_content1)" class="dropbtn";>Corsi lingue &#9660;</button>
+					<button type="button" name="button" class="dropbtn_formazione";>
+					<a href="https://formazionelavoro.regione.emilia-romagna.it/iefp/approfondimenti/offerta-formativa/offerta-20-21">Corsi ieFp 20/21
+					<img class="link" src="./img/link.png"/></a>
+					</button>
+				</div>
+
+
+				<div>
+					<button type="button" name="button" onclick="showMenu(dropdown_content1)" class="dropbtn_formazione";>Corsi lingue &#9660;</button>
 
 						<div id="dropdown_content1" class="dropdown_content_class">
 							<a href="http://www.languagetoday.eu/home/"><h3>Language today - Today School of English - Faenza-Forl&igrave</h3></a><br/>
@@ -102,28 +114,28 @@
 				</div>
 
 				<div>
-					<button type="button" name="button" class="dropbtn";>
+					<button type="button" name="button" class="dropbtn_formazione";>
 					<a href="http://www.informagiovaniravenna.it/formazione/formazione-informatica/">Corsi informatica
 					<img class="link" src="./img/link.png"/></a>
 					</button>
 				</div>
 
 				<div>
-					<button type="button" name="button" class="dropbtn";>
+					<button type="button" name="button" class="dropbtn_formazione";>
 					<a href="http://www.informagiovaniravenna.it/formazione/formazione-universitaravenna/">Corsi universitari a Ravenna
 					<img class="link" src="./img/link.png"/></a>
 					</button>
 				</div>
 
 				<div>
-					<button type="button" name="button" class="dropbtn";>
+					<button type="button" name="button" class="dropbtn_formazione";>
 					<a href="http://www.isiafaenza.it">Corsi Alta Formazione Artistica
 					<img class="link" src="./img/link.png"/></a>
 					</button>
 				</div>
 
 				<div>
-					<button type="button" name="button" onclick="showMenu(dropdown_content2)" class="dropbtn";>Indirizzi utili e Enti di formazione &#9660;</button>
+					<button type="button" name="button" onclick="showMenu(dropdown_content2)" class="dropbtn_formazione";>Indirizzi utili e Enti di formazione &#9660;</button>
 
 					<div id="dropdown_content2" class="dropdown_content_class">
 						<a href="./formazione/ravenna.html"><h3>Ravenna</h3></a><br/>

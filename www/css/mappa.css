@@ -1,0 +1,169 @@
+#Map {
+    width: 100%;
+    height: 50%;
+    position: relative;
+    outline: thin;
+    z-index: 1;
+}
+
+#buttonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#disclaimer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+	padding: 0px 20px 0px 20px;
+	font-size: 12px;
+}
+
+#bSport {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #2085b1;
+}
+
+#bSport:hover {
+    background-color: #1b6e92;
+}
+
+#bSport:active {
+    background-color: #2085b1;
+    box-shadow: 0 5px #666;
+}
+
+#bStorico {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #ffc70a;
+}
+
+#bStorico:hover {
+    background-color: #d6a60a;
+}
+
+#bStorico:active {
+    background-color: #ffc70a;
+    box-shadow: 0 5px #666;
+}
+
+#bBaracca {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #e40f76;
+}
+
+#bBaracca:hover {
+    background-color: #c40d65;
+}
+
+#bBaracca:active {
+    background-color: #e40f76;
+    box-shadow: 0 5px #666;
+}
+
+#bGreen {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #68830e;
+}
+
+#bGreen:hover {
+    background-color: #5c740e;
+}
+
+#bGreen:active {
+    background-color: #68830e;
+    box-shadow: 0 5px #666;
+}
+
+#bUtilita {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #94271f;
+}
+
+#bUtilita:hover {
+    background-color: #7e211a;
+}
+
+#bUtilita:active {
+    background-color: #94271f;
+    box-shadow: 0 5px #666;
+}
+
+#bTutti {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #b26c01;
+}
+
+#bTutti:hover {
+    background-color: #a16101;
+}
+
+#bTutti:active {
+    background-color: #b26c01;
+    box-shadow: 0 5px #666;
+}
+
+.bottoniSpan {
+    font-size: 100%;
+    color: rgb(255, 255, 255);
+}
+
+#list {
+    text-align: left;
+    padding: 40px;
+    font-weight: bold;
+}
+
+#mapPage {
+    text-align: left;
+    width: 100%;
+}
+
+#map_app {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#info_page {
+    text-align: left;
+}
+
+h1.title {
+    text-align: center;
+}
+
+#img_info {
+    display: none;
+}
+
+#info_page p {
+    padding: 10px;
+}

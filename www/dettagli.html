@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+    <link rel="stylesheet" type="text/css" href="css/contatti.css">
+    <link rel="stylesheet" href="./font-awesome/css/all.css">
+    <link rel="stylesheet" href="css/mappa.css" type="text/css">
+    <title>Informazioni</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="menu-icon">
+            <i class="fas fa-bars" id="icon"></i>
+        </div>
+        <ul class="nav-links">
+            <li> <a class="link" href="./index.html">Home</a> </li>
+             <li> <a class="link" href="chi_siamo.html">Chi siamo</a> </li>
+             <li> <a class="link" href="http://www.informagiovanifaenza.it/news/">News</a> </li>
+             <li> <a class="link" href="http://www.informagiovaniravenna.it/newsletter-2/">Newsletters</a> </li>
+             <li> <a class="link" href="informagiovani.html">Informagiovani <br/>nella tua citt&agrave</a></li>
+            <li> <a class="link" href="http://www.informagiovanifaenza.it/progetti/">Progetti</a></li>
+             <li> <a class="link" href="applichiamoci.html">Applichiamoci</a> </li>
+             <li> <a class="link" href="consulta_ragazzi.html">Consulta dei ragazzi</a> </li>
+            <li> <a class="link" href="http://www.informagiovanifaenza.it/video">Video</a></li>
+             <li> <a class="link" href="contatti.html">Contatti e orari</a> </li>
+
+        </ul>
+    </nav>
+
+    <div class="logo">
+        <div class=logo img><img class="logo" src=".\img\logo-informagiovani.png" /></div>
+    </div>
+
+    <div class="app">
+
+
+        <div class="page" id="info_page">
+
+            <h1 class="title" id="luogo"></h1>
+            <img src="" id="img_info" alt="immagine della pagina di informazioni di un luogo" />
+            <p><b>Tipologia:</b> <span id="tipologia"></span></p>
+            <p><b>emozioni:</b> <span id="emozioni"></span></p>
+            <p><b>indirizzo:</b> <span id="indirizzo"></span></p>
+            <!--<p><b>latitudine:</b> <span id="latitudine"></span></p>
+            <p><b>longitudine:</b> <span id="longitudine"></span></p> -->
+			<p><b>posizione:</b> <a id="posizione"></a> </p>
+            <p><b>descrizione:</b> <span id="descrizione"></span></p>
+            <p><b>curiosità:</b> <span id="curiosita"></span></p>
+            <p><b>devi provare:</b> <span id="daProvare"></span></p>
+            <p><b>link:</b>
+                <a id="link"></a>
+            </p>
+            <script src="js/script.js"></script>
+        </div>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/menu_new.js"></script>
+</body>
+
+</html>
