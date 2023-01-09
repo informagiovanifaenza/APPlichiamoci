@@ -1,7 +1,12 @@
 body
 {
-  background-color: #32353b;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(100, 100, 100, 0.5)),
+                  url("./sfondo/sfondo1.jpg");
+		  
   width:100%;
+
 }
 a
 {
@@ -129,11 +134,11 @@ div.menu-icon /*barre bianche*/
   {
     position: fixed;
     height: 100%;
-    width:100%;
+    width:75%;
     background: black;
     flex-direction: column;
     right: -100%;
-    transition: 0.5s;
+    transition: 0.55s;
   }
   div.menu-icon
   {

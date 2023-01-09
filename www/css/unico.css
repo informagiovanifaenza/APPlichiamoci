@@ -274,18 +274,19 @@ div.menu-icon
   font-size: 30px;
   right:0;
   display: none;
+  margin-top:2px;
 }
 @media screen and (max-width: 3000px)
 {
   .nav-links
   {
     position: fixed;
-    height: 102%;
-    width:100%;
+    height: 100%;
+    width:75%;
     background: black;
     flex-direction: column;
     left: -100%;
-    transition: 0.5s;
+    transition: 0.55s;
     margin-top:-10px;
   }
   div.menu-icon
@@ -294,7 +295,7 @@ div.menu-icon
     justify-content: center;
     align-items: center;
     z-index: 1;
-    margin-right: 12px;
+    margin-right: 40%;
   }
   .nav-links.open
   {

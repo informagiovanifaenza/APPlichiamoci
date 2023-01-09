@@ -171,11 +171,11 @@ div.menu-icon
   {
     position: fixed;
     height: 100%;
-    width:100%;
+    width:75%;
     background: black;
     flex-direction: column;
     left: -100%;
-    transition: 0.5s;
+    transition: 0.55s;
   }
   div.menu-icon
   {
@@ -183,7 +183,7 @@ div.menu-icon
     justify-content: center;
     align-items: center;
     z-index: 1;
-    margin-right: 12px;
+    margin-right: 40%;
   }
   .nav-links.open
   {
