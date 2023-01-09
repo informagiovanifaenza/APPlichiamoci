@@ -65,9 +65,9 @@ function createMarker(lat, lon, luogo, numero, tipologia) {
     switch (tipologia) {
         case 'B':
             var ColorIcon = new L.Icon({
-                iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+                iconUrl: 'https://raw.githubusercontent.com/Ragnoboy/informagiovani_map/main/IconaFarBaracca.png',
                 shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-                iconSize: [25, 41],
+                iconSize: [35, 41],
                 iconAnchor: [12, 41],
                 popupAnchor: [1, -34],
                 shadowSize: [41, 41]
@@ -75,9 +75,9 @@ function createMarker(lat, lon, luogo, numero, tipologia) {
             break;
         case 'C':
             var ColorIcon = new L.Icon({
-                iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-yellow.png',
+                iconUrl: 'https://raw.githubusercontent.com/Ragnoboy/informagiovani_map/main/IconaStoricoCulturale.png',
                 shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-                iconSize: [25, 41],
+                iconSize: [50, 60],
                 iconAnchor: [12, 41],
                 popupAnchor: [1, -34],
                 shadowSize: [41, 41]
@@ -85,9 +85,9 @@ function createMarker(lat, lon, luogo, numero, tipologia) {
             break;
         case 'S':
             var ColorIcon = new L.Icon({
-                iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png',
+                iconUrl: 'https://raw.githubusercontent.com/Ragnoboy/informagiovani_map/main/IconaSport.png',
                 shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-                iconSize: [25, 41],
+                iconSize: [35, 41],
                 iconAnchor: [12, 41],
                 popupAnchor: [1, -34],
                 shadowSize: [41, 41]
@@ -95,19 +95,19 @@ function createMarker(lat, lon, luogo, numero, tipologia) {
             break;
         case 'G':
             var ColorIcon = new L.Icon({
-                iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+                iconUrl: 'https://raw.githubusercontent.com/Ragnoboy/informagiovani_map/main/IconaGreen.png',
                 shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-                iconSize: [25, 41],
-                iconAnchor: [12, 41],
+                iconSize: [60, 60],
+                iconAnchor: [-20, 51],
                 popupAnchor: [1, -34],
-                shadowSize: [41, 41]
+                shadowSize: [60, 60]
             });
             break;
         case 'U':
             var ColorIcon = new L.Icon({
-                iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-orange.png',
+                iconUrl: 'https://raw.githubusercontent.com/Ragnoboy/informagiovani_map/main/IconaUtilità.png',
                 shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-                iconSize: [25, 41],
+                iconSize: [40, 41],
                 iconAnchor: [12, 41],
                 popupAnchor: [1, -34],
                 shadowSize: [41, 41]
@@ -117,9 +117,9 @@ function createMarker(lat, lon, luogo, numero, tipologia) {
 
         default:
             var ColorIcon = new L.Icon({
-                iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-violet.png',
+                iconUrl: 'https://raw.githubusercontent.com/Ragnoboy/informagiovani_map/main/IconaFarBaracca.png',
                 shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-                iconSize: [25, 41],
+                iconSize: [35, 41],
                 iconAnchor: [12, 41],
                 popupAnchor: [1, -34],
                 shadowSize: [41, 41]
