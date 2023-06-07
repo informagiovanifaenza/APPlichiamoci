@@ -1,7 +1,7 @@
 {
     "name": "it.informagiovanifaenza.applichiamoci",
     "displayName": "InformaGiovaniFaenza",
-    "version": "4.0.0",
+    "version": "5.0.0",
     "description": "App for Informagiovani of Romagna Faentina, developed as an Apache Cordova application that responds to the deviceready event.",
     "main": "index.js",
     "scripts": {
