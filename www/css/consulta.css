@@ -95,6 +95,15 @@ h3	{
 	color: #e40f76;
 }
 
+h5  {
+	height: 75px;
+	font-size: 120%; 
+	color: white;
+	background-color: #e40f76;	
+	text-decoration:none;
+	padding-top: 5px;
+	width: 300px;
+}
 h4 {
 	height: 45px;
 	font-size: 120%; 

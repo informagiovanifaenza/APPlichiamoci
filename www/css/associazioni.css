@@ -1,0 +1,171 @@
+body
+{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(100, 100, 100, 0.5)),
+                  url("./sfondo/sfondo_manicolorate_sfuocate.png");
+		  
+  width:100%;
+
+}
+
+
+
+a
+{
+  text-decoration: none;
+  color: white;
+}
+img.logo
+{
+  height: auto;
+  top: 10px;
+
+}
+div.logo
+{
+	width:100%;
+	text-align:right;
+}
+
+div.container
+{
+  width:100%;
+  text-align: center;
+}
+
+table.table1
+{ margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+tr
+{
+  text-align: center;
+}
+td
+{
+  font-size: 15pt;
+  color: white;
+  width:33%;
+}
+
+img.icon
+{
+  width:100px;
+}
+
+img.icona
+{
+  width:78px;
+  border-radius: 20px;
+}
+
+img.icohp
+{
+  width:85px;
+}
+
+
+/*menu*/
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body
+{
+  font-family: verdana;
+}
+nav /*banda nera in alto*/
+{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background-color: black;
+}
+a
+{
+  text-decoration: none;
+}
+.nav-links
+{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  float: right;
+}
+.nav-links li
+{
+  list-style: none;
+}
+a.link
+{
+  text-decoration: none;
+  color: white;
+  font-family: verdana;
+  font-size: 24px;
+}
+div.menu-icon /*barre bianche*/
+{
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  color: white;
+  font-size: 30px;
+  right:0;
+  display: none;
+  margin-top:2px;
+}
+@media screen and (max-width: 3000px)
+{
+
+  .nav-links
+  {
+    position: fixed;
+    height: 100%;
+    width:75%;
+    background: black;
+    flex-direction: column;
+    right: -100%;
+    transition: 0.55s;
+  }
+  div.menu-icon
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    margin-right: 12px;
+  }
+  .nav-links.open
+  {
+    right:0px;
+
+  }
+  
+.home img {
+  width: 50%;
+  height: auto;
+  top: 10px;
+}
+
+.home .btn {
+  display: block;
+  margin:auto;
+  width: 5%;
+  height: 8%;
+  background-color: #f1f1f1;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.home .btn:hover {
+  background-color: grey;
+  top: 10px;
+}

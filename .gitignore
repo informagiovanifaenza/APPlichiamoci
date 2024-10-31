@@ -1,10 +1,21 @@
+# Impostazioni ambienti di sviluppo
 /.settings
 /.project
-/platforms/
-/node_modules/
-/bin/
-
-/.classpath
-
 /.idea
+
+# File da rigenerare col comando "cordova init"
+/platforms/
+/plugins/
+node_modules/
+package-lock.json
+
+# File di sistema da ignorare
+.DS_Store
+._*
+desktop.ini
+
+
+# Altri file da ignorare
+/.classpath
 /*.iml
+.gradle
